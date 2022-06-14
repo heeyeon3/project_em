@@ -1,0 +1,167 @@
+
+Game_0.png
+size: 685,1006
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CrockArm
+  rotate: false
+  xy: 2, 76
+  size: 167, 110
+  orig: 167, 110
+  offset: 0, 0
+  index: -1
+CrockBody
+  rotate: false
+  xy: 2, 528
+  size: 530, 476
+  orig: 530, 476
+  offset: 0, 0
+  index: -1
+CrockEye1
+  rotate: false
+  xy: 653, 511
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+CrockEye2
+  rotate: false
+  xy: 443, 275
+  size: 47, 42
+  orig: 47, 42
+  offset: 0, 0
+  index: -1
+CrockEye3
+  rotate: false
+  xy: 653, 537
+  size: 30, 20
+  orig: 30, 20
+  offset: 0, 0
+  index: -1
+CrockLeg
+  rotate: false
+  xy: 443, 343
+  size: 74, 88
+  orig: 74, 88
+  offset: 0, 0
+  index: -1
+CrockMouth
+  rotate: false
+  xy: 2, 2
+  size: 209, 72
+  orig: 209, 72
+  offset: 0, 0
+  index: -1
+Ground
+  rotate: false
+  xy: 2, 188
+  size: 439, 338
+  orig: 439, 338
+  offset: 0, 0
+  index: -1
+RudyArm_Bottom
+  rotate: false
+  xy: 213, 32
+  size: 77, 83
+  orig: 77, 83
+  offset: 0, 0
+  index: -1
+RudyArm_Top
+  rotate: false
+  xy: 443, 433
+  size: 88, 93
+  orig: 88, 93
+  offset: 0, 0
+  index: -1
+RudyBody
+  rotate: false
+  xy: 534, 559
+  size: 139, 209
+  orig: 139, 209
+  offset: 0, 0
+  index: -1
+RudyEar
+  rotate: false
+  xy: 534, 770
+  size: 147, 234
+  orig: 147, 234
+  offset: 0, 0
+  index: -1
+RudyEye
+  rotate: false
+  xy: 381, 116
+  size: 49, 70
+  orig: 49, 70
+  offset: 0, 0
+  index: -1
+RudyFace
+  rotate: false
+  xy: 443, 42
+  size: 222, 209
+  orig: 222, 209
+  offset: 0, 0
+  index: -1
+RudyFoot
+  rotate: false
+  xy: 443, 319
+  size: 44, 22
+  orig: 44, 22
+  offset: 0, 0
+  index: -1
+RudyHand
+  rotate: false
+  xy: 598, 346
+  size: 81, 89
+  orig: 81, 89
+  offset: 0, 0
+  index: -1
+RudyLegBottom
+  rotate: false
+  xy: 525, 269
+  size: 34, 48
+  orig: 34, 48
+  offset: 0, 0
+  index: -1
+RudyLegTop
+  rotate: false
+  xy: 598, 253
+  size: 75, 91
+  orig: 75, 91
+  offset: 0, 0
+  index: -1
+RudyMouth
+  rotate: false
+  xy: 443, 257
+  size: 80, 16
+  orig: 80, 16
+  offset: 0, 0
+  index: -1
+RudyTail
+  rotate: false
+  xy: 292, 34
+  size: 74, 81
+  orig: 74, 81
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 171, 117
+  size: 208, 69
+  orig: 208, 69
+  offset: 0, 0
+  index: -1
+Star
+  rotate: false
+  xy: 534, 437
+  size: 117, 120
+  orig: 117, 120
+  offset: 0, 0
+  index: -1
+Sweat
+  rotate: false
+  xy: 533, 319
+  size: 63, 116
+  orig: 63, 116
+  offset: 0, 0
+  index: -1

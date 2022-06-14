@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>eMotiV</title>
+<!-- 공통 링크 시작 -->
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/contents.css">
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/jquery.scrollbar.js"></script>
+<script type="text/javascript" src="./js/pbCommon.js"></script>
+<!-- //공통 링크 끝 -->
+</head>
+<body>
+<form method="post" action="" id="form1">
+<!-- wrap 시작 -->
+<div id="wrap">
+    <!-- header 시작 -->
+    <div id="header">
+        <div class="header_inner">
+            <div class="header_tit">			 
+                <h1>eMotiV</h1>
+                <a href="/login" class="btn_login">로그인</a>				
+                <div class="profile_sel">
+                    <button type="button" class="btn_profile_sel" id="btnProfileSel"><img id="btnProfileSel_img" src="./images/@profile01.png" alt="" class=""><span class="hide">프로필선택</span></button>
+                    <div class="profile_menu">
+                        <button type="button" id="btnProfile">프로필 변경</button>
+				        <button type="button" id="btnLogout">로그아웃</button>
+                    </div>
+                </div>
+                <button type="button" class="btn_menu_open">메뉴 열기</button>				
+            </div>
+            <nav class="menu_wrap">				
+                <div class="lnb_tit">
+                    <strong class="menu_logo">전체메뉴</strong>
+                    <button type="button" class="btn_menu_close">메뉴 닫기</button>
+                </div>
+                <div class="user_info">
+                    <div class="user_logout"><span>로그인을 해주세요.</span><a href="/login" class="btn_login">로그인</a></div>
+                    <div class="user_login"><strong>hhhtnwls</strong>님 안녕하세요.</div>
+                </div>
+                <!-- 2022.01.26일 추가 시작-->
+				<div class="sel_language">
+					<button type="button" class="on">한국어</button>
+					<button type="button" class="off">English</button>
+				</div>
+				<!-- 2022.01.26일 추가 끝-->
+                <ul class="nav_menu">
+                    <li class="menu_home"><a href="/">홈</a></li>
+                    <li class="menu_company"><a href="/company_info" class="active">회사소개</a></li>
+                    <li class="menu_star"><a href="star_info.html">Star Ruckus</a></li>
+                    <li class="menu_edu"><a href="edu_info.html">교육</a></li>                    
+                    <li class="menu_chart"><a href="/digitalchart_info">디지털차트</a></li>
+                    <li class="menu_my"><a href="mypage_info.html">마이페이지</a></li>
+                </ul>				
+            </nav>
+        </div>
+	</div>
+    <!-- header 끝 -->
+    
+    <!-- container 시작 -->
+    <div id="container">
+		<!-- content 시작 -->
+        <div id="content">
+			<h2>메인</h2>
+			컨텐츠 들어감
+        </div>
+        <!-- //content 끝 -->
+    </div>
+    <!-- //container 끝 -->
+	<!-- footer 시작-->
+	<footer id="footer">
+		<div class="footer_inner">
+			<h2>footer</h2>
+			<div class="footer_menu">
+				<button type="button" id="" onclick="privacypolicy()">개인정보처리방침</button>
+				<button type="button" id="" onclick="terms()">이용약관</button>
+				<a href="/faq">FAQ</a>
+			</div>
+			<p class="footer_copy">Copyright emotive CO., LTD. ALL RIGHTS RESERVED.</p>
+		</div>		
+	</footer>
+	<!-- //footer 끝-->
+</div>
+<!-- //wrap 끝 -->
+
+
+
+
+
+	
+<!-- page script 시작 -->
+<script type="text/javascript">			
+$(document).ready(function(){	
+
+});		
+</script>
+<!-- //page script 끝 -->	
+</form>
+</body>
+</html>
+

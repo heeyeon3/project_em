@@ -1,0 +1,146 @@
+
+RuCroEffect.png
+size: 1898,958
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CrockArm
+  rotate: false
+  xy: 1360, 170
+  size: 334, 220
+  orig: 334, 220
+  offset: 0, 0
+  index: -1
+CrockBody
+  rotate: false
+  xy: 2, 4
+  size: 1060, 952
+  orig: 1060, 952
+  offset: 0, 0
+  index: -1
+CrockEye1
+  rotate: false
+  xy: 1780, 416
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+CrockEye3
+  rotate: false
+  xy: 1616, 6
+  size: 60, 40
+  orig: 60, 40
+  offset: 0, 0
+  index: -1
+CrockLeg
+  rotate: false
+  xy: 1790, 544
+  size: 74, 88
+  orig: 74, 88
+  offset: 0, 0
+  index: -1
+CrockMouth
+  rotate: false
+  xy: 1360, 392
+  size: 418, 144
+  orig: 418, 144
+  offset: 0, 0
+  index: -1
+RudyArm_Bottom
+  rotate: false
+  xy: 1360, 2
+  size: 154, 166
+  orig: 154, 166
+  offset: 0, 0
+  index: -1
+RudyArm_Top
+  rotate: false
+  xy: 1696, 194
+  size: 186, 196
+  orig: 186, 196
+  offset: 0, 0
+  index: -1
+RudyBody
+  rotate: false
+  xy: 1510, 538
+  size: 278, 418
+  orig: 278, 418
+  offset: 0, 0
+  index: -1
+RudyEar
+  rotate: false
+  xy: 1064, 68
+  size: 294, 468
+  orig: 294, 468
+  offset: 0, 0
+  index: -1
+RudyEye
+  rotate: false
+  xy: 1780, 466
+  size: 49, 70
+  orig: 49, 70
+  offset: 0, 0
+  index: -1
+RudyEye2
+  rotate: false
+  xy: 1790, 816
+  size: 98, 140
+  orig: 98, 140
+  offset: 0, 0
+  index: -1
+RudyEye3
+  rotate: false
+  xy: 1516, 28
+  size: 98, 140
+  orig: 98, 140
+  offset: 0, 0
+  index: -1
+RudyEye4
+  rotate: false
+  xy: 1226, 16
+  size: 116, 50
+  orig: 116, 50
+  offset: 0, 0
+  index: -1
+RudyEyeEffect
+  rotate: false
+  xy: 1790, 634
+  size: 85, 82
+  orig: 85, 82
+  offset: 0, 0
+  index: -1
+RudyFace
+  rotate: false
+  xy: 1064, 538
+  size: 444, 418
+  orig: 444, 418
+  offset: 0, 0
+  index: -1
+RudyHand
+  rotate: false
+  xy: 1735, 15
+  size: 161, 177
+  orig: 161, 177
+  offset: 0, 0
+  index: -1
+RudyMouth
+  rotate: false
+  xy: 1064, 34
+  size: 160, 32
+  orig: 160, 32
+  offset: 0, 0
+  index: -1
+RudyMouth2
+  rotate: false
+  xy: 1790, 718
+  size: 82, 96
+  orig: 82, 96
+  offset: 0, 0
+  index: -1
+Star
+  rotate: false
+  xy: 1616, 48
+  size: 117, 120
+  orig: 117, 120
+  offset: 0, 0
+  index: -1

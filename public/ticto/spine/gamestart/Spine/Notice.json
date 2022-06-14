@@ -1,0 +1,1168 @@
+{
+    "skeleton": {
+        "hash": "eGmtCtBYawRsROKS1vfkuJ6X0U8",
+        "spine": "3.8.99",
+        "x": -1325,
+        "y": -540,
+        "width": 2650,
+        "height": 1080,
+        "images": "./Img/",
+        "audio": ""
+    },
+    "bones": [
+        {
+            "name": "root"
+        },
+        {
+            "name": "Sound",
+            "parent": "root",
+            "y": 50,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "name": "Child",
+            "parent": "root",
+            "y": 50,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "name": "Pencil",
+            "parent": "Child",
+            "length": 126.68,
+            "rotation": 45.81,
+            "x": 50.8,
+            "y": -138.03
+        },
+        {
+            "name": "Child2",
+            "parent": "Child",
+            "x": -27.31,
+            "y": 13.09
+        },
+        {
+            "name": "Graph",
+            "parent": "root",
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "name": "Line",
+            "parent": "Graph",
+            "length": 57.81,
+            "rotation": 42,
+            "x": -227.58,
+            "y": 72.69,
+            "scaleX": 0.2117
+        },
+        {
+            "name": "Graph2",
+            "parent": "Graph",
+            "length": 62.24,
+            "rotation": 90,
+            "x": -182.57,
+            "y": -112.09
+        },
+        {
+            "name": "Graph3",
+            "parent": "Graph",
+            "length": 62.24,
+            "rotation": 90,
+            "x": -107.91,
+            "y": -112.09
+        },
+        {
+            "name": "Graph4",
+            "parent": "Graph",
+            "length": 62.24,
+            "rotation": 90,
+            "x": -35.29,
+            "y": -112.09
+        },
+        {
+            "name": "Graph5",
+            "parent": "Graph",
+            "length": 62.24,
+            "rotation": 90,
+            "x": 37.64,
+            "y": -112.09
+        },
+        {
+            "name": "Graph6",
+            "parent": "Graph",
+            "length": 62.24,
+            "rotation": 90,
+            "x": 111.5,
+            "y": -112.09
+        },
+        {
+            "name": "Graph7",
+            "parent": "Graph",
+            "length": 62.24,
+            "rotation": 90,
+            "x": 183.82,
+            "y": -112.09
+        },
+        {
+            "name": "Dot1",
+            "parent": "Graph",
+            "x": -231.25,
+            "y": 69.32
+        },
+        {
+            "name": "Dot2",
+            "parent": "Graph",
+            "x": -109.51,
+            "y": 178.16,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "name": "Dot3",
+            "parent": "Graph",
+            "x": 47.38,
+            "y": 111.64,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "name": "Dot4",
+            "parent": "Graph",
+            "x": 209.33,
+            "y": 246.12,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "name": "Line2",
+            "parent": "Graph",
+            "length": 57.81,
+            "rotation": -23,
+            "x": -109.7,
+            "y": 178.33,
+            "scaleX": 0.2117
+        },
+        {
+            "name": "Line3",
+            "parent": "Graph",
+            "length": 57.81,
+            "rotation": 40,
+            "x": 47.79,
+            "y": 111.88,
+            "scaleX": 0.2117
+        },
+        {
+            "name": "Handphone",
+            "parent": "root",
+            "y": 50,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "name": "Timer",
+            "parent": "root",
+            "y": 50,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "name": "Timer_02",
+            "parent": "Timer",
+            "x": 1,
+            "y": -16.14
+        },
+        {
+            "name": "Timer_2",
+            "parent": "Timer",
+            "x": 1,
+            "y": -16.14
+        },
+        {
+            "name": "Timer_3",
+            "parent": "Timer",
+            "x": 1,
+            "y": -16.14
+        },
+        {
+            "name": "Timer_4",
+            "parent": "Timer",
+            "x": 1,
+            "y": -16.14
+        }
+    ],
+    "slots": [
+        {
+            "name": "Login",
+            "bone": "root"
+        },
+        {
+            "name": "Sound3",
+            "bone": "Sound",
+            "color": "ffffff00",
+            "attachment": "Sound3"
+        },
+        {
+            "name": "Sound2",
+            "bone": "Sound",
+            "color": "ffffff00",
+            "attachment": "Sound2"
+        },
+        {
+            "name": "Sound1",
+            "bone": "Sound",
+            "color": "ffffff00",
+            "attachment": "Sound1"
+        },
+        {
+            "name": "Face",
+            "bone": "Child2",
+            "color": "ffffff00",
+            "attachment": "Face"
+        },
+        {
+            "name": "Pencil",
+            "bone": "Pencil",
+            "color": "ffffff00",
+            "attachment": "Pencil"
+        },
+        {
+            "name": "Mouth",
+            "bone": "Child2",
+            "color": "ffffff00",
+            "attachment": "Mouth"
+        },
+        {
+            "name": "Eye",
+            "bone": "Child2",
+            "color": "ffffff00",
+            "attachment": "Eye"
+        },
+        {
+            "name": "Eye2",
+            "bone": "Child2",
+            "color": "ffffff00",
+            "attachment": "Eye"
+        },
+        {
+            "name": "Graph1",
+            "bone": "Graph2",
+            "color": "ffffff00",
+            "attachment": "Graph1"
+        },
+        {
+            "name": "Graph2",
+            "bone": "Graph3",
+            "color": "ffffff00",
+            "attachment": "Graph1"
+        },
+        {
+            "name": "Graph3",
+            "bone": "Graph4",
+            "color": "ffffff00",
+            "attachment": "Graph1"
+        },
+        {
+            "name": "Graph4",
+            "bone": "Graph5",
+            "color": "ffffff00",
+            "attachment": "Graph1"
+        },
+        {
+            "name": "Graph5",
+            "bone": "Graph6",
+            "color": "ffffff00",
+            "attachment": "Graph1"
+        },
+        {
+            "name": "Graph6",
+            "bone": "Graph7",
+            "color": "ffffff00",
+            "attachment": "Graph1"
+        },
+        {
+            "name": "Dot",
+            "bone": "Dot1",
+            "color": "ffffff00",
+            "attachment": "Dot"
+        },
+        {
+            "name": "Dot2",
+            "bone": "Dot2",
+            "color": "ffffff00",
+            "attachment": "Dot"
+        },
+        {
+            "name": "Dot3",
+            "bone": "Dot3",
+            "color": "ffffff00",
+            "attachment": "Dot"
+        },
+        {
+            "name": "Dot4",
+            "bone": "Dot4",
+            "color": "ffffff00",
+            "attachment": "Dot"
+        },
+        {
+            "name": "Line",
+            "bone": "Line",
+            "color": "ffffff00",
+            "attachment": "Line"
+        },
+        {
+            "name": "Line2",
+            "bone": "Line2",
+            "color": "ffffff00",
+            "attachment": "Line"
+        },
+        {
+            "name": "Line3",
+            "bone": "Line3",
+            "color": "ffffff00",
+            "attachment": "Line"
+        },
+        {
+            "name": "Handphone",
+            "bone": "Handphone",
+            "color": "ffffff00",
+            "attachment": "Handphone"
+        },
+        {
+            "name": "Timer_01",
+            "bone": "Timer",
+            "color": "ffffff00",
+            "attachment": "Timer_01"
+        },
+        {
+            "name": "Timer_02",
+            "bone": "Timer_02",
+            "color": "ffffff00",
+            "attachment": "Timer_02"
+        },
+        {
+            "name": "Timer_5",
+            "bone": "Timer_2",
+            "color": "ffffff00",
+            "attachment": "Timer_02"
+        },
+        {
+            "name": "Timer_6",
+            "bone": "Timer_3",
+            "color": "ffffff00",
+            "attachment": "Timer_02"
+        },
+        {
+            "name": "Timer_7",
+            "bone": "Timer_4",
+            "color": "ffffff00",
+            "attachment": "Timer_02"
+        },
+        {
+            "name": "10",
+            "bone": "Timer",
+            "color": "ffffff00",
+            "attachment": "10"
+        }
+    ],
+    "skins": [
+        {
+            "name": "default",
+            "attachments": {
+                "10": {
+                    "10": {
+                        "y": -5,
+                        "width": 84,
+                        "height": 58
+                    }
+                },
+                "Dot": {
+                    "Dot": {
+                        "x": 0.25,
+                        "y": -0.32,
+                        "width": 49,
+                        "height": 49
+                    }
+                },
+                "Dot2": {
+                    "Dot": {
+                        "x": -0.49,
+                        "y": -0.16,
+                        "width": 49,
+                        "height": 49
+                    }
+                },
+                "Dot3": {
+                    "Dot": {
+                        "x": 0.62,
+                        "y": -0.64,
+                        "width": 49,
+                        "height": 49
+                    }
+                },
+                "Dot4": {
+                    "Dot": {
+                        "x": -0.33,
+                        "y": -0.12,
+                        "width": 49,
+                        "height": 49
+                    }
+                },
+                "Eye": {
+                    "Eye": {
+                        "x": 48.81,
+                        "y": 8.91,
+                        "width": 27,
+                        "height": 27
+                    }
+                },
+                "Eye2": {
+                    "Eye": {
+                        "x": -43.19,
+                        "y": 8.91,
+                        "width": 27,
+                        "height": 27
+                    }
+                },
+                "Face": {
+                    "Face": {
+                        "x": 2.81,
+                        "y": 10.41,
+                        "width": 311,
+                        "height": 265
+                    }
+                },
+                "Graph1": {
+                    "Graph1": {
+                        "x": 37.09,
+                        "y": -0.57,
+                        "rotation": -90,
+                        "width": 62,
+                        "height": 96
+                    }
+                },
+                "Graph2": {
+                    "Graph1": {
+                        "x": 37.09,
+                        "y": 1.09,
+                        "rotation": -90,
+                        "width": 62,
+                        "height": 96
+                    }
+                },
+                "Graph3": {
+                    "Graph1": {
+                        "x": 37.09,
+                        "y": 0.71,
+                        "rotation": -90,
+                        "width": 62,
+                        "height": 96
+                    }
+                },
+                "Graph4": {
+                    "Graph1": {
+                        "x": 37.09,
+                        "y": 0.64,
+                        "rotation": -90,
+                        "width": 62,
+                        "height": 96
+                    }
+                },
+                "Graph5": {
+                    "Graph1": {
+                        "x": 37.09,
+                        "y": 1.5,
+                        "rotation": -90,
+                        "width": 62,
+                        "height": 96
+                    }
+                },
+                "Graph6": {
+                    "Graph1": {
+                        "x": 37.09,
+                        "y": 0.82,
+                        "rotation": -90,
+                        "width": 62,
+                        "height": 96
+                    }
+                },
+                "Handphone": {
+                    "Handphone": {
+                        "x": 0.5,
+                        "width": 201,
+                        "height": 342
+                    }
+                },
+                "Line": {
+                    "Line": {
+                        "x": 28.95,
+                        "y": -0.04,
+                        "width": 58,
+                        "height": 4
+                    }
+                },
+                "Line2": {
+                    "Line": {
+                        "x": 28.95,
+                        "y": -0.04,
+                        "width": 58,
+                        "height": 4
+                    }
+                },
+                "Line3": {
+                    "Line": {
+                        "x": 28.95,
+                        "y": -0.04,
+                        "width": 58,
+                        "height": 4
+                    }
+                },
+                "Mouth": {
+                    "Mouth": {
+                        "x": 3.31,
+                        "y": -45.09,
+                        "width": 82,
+                        "height": 20
+                    }
+                },
+                "Pencil": {
+                    "Pencil": {
+                        "x": 78.62,
+                        "y": -2.66,
+                        "rotation": -45.81,
+                        "width": 142,
+                        "height": 144
+                    }
+                },
+                "Sound1": {
+                    "Sound1": {
+                        "x": -46.5,
+                        "width": 121,
+                        "height": 181
+                    }
+                },
+                "Sound2": {
+                    "Sound2": {
+                        "x": 45,
+                        "y": -0.5,
+                        "width": 57,
+                        "height": 114
+                    }
+                },
+                "Sound3": {
+                    "Sound3": {
+                        "x": 74,
+                        "y": -0.5,
+                        "width": 68,
+                        "height": 168
+                    }
+                },
+                "Timer_01": {
+                    "Timer_01": {
+                        "x": 0.5,
+                        "y": 0.5,
+                        "width": 269,
+                        "height": 299
+                    }
+                },
+                "Timer_02": {
+                    "Timer_02": {
+                        "x": 58.5,
+                        "y": 57.14,
+                        "width": 119,
+                        "height": 119
+                    }
+                },
+                "Timer_5": {
+                    "Timer_02": {
+                        "x": 58.5,
+                        "y": 57.14,
+                        "width": 119,
+                        "height": 119
+                    }
+                },
+                "Timer_6": {
+                    "Timer_02": {
+                        "x": 58.5,
+                        "y": 57.14,
+                        "width": 119,
+                        "height": 119
+                    }
+                },
+                "Timer_7": {
+                    "Timer_02": {
+                        "x": 58.5,
+                        "y": 57.14,
+                        "width": 119,
+                        "height": 119
+                    }
+                }
+            }
+        }
+    ],
+    "animations": {
+        "10Minute": {
+            "slots": {
+                "10": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Timer_01": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Timer_02": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Timer_5": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Timer_6": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Timer_7": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "Timer": {
+                    "scale": [
+                        {
+                            "x": 3.333,
+                            "y": 3.333
+                        },
+                        {
+                            "time": 0.5333,
+                            "x": 3.833,
+                            "y": 3.833
+                        },
+                        {
+                            "time": 1,
+                            "x": 3.333,
+                            "y": 3.333
+                        },
+                        {
+                            "time": 1.5333,
+                            "x": 3.833,
+                            "y": 3.833
+                        },
+                        {
+                            "time": 2,
+                            "x": 3.333,
+                            "y": 3.333
+                        }
+                    ]
+                },
+                "Timer_2": {
+                    "rotate": [
+                        {},
+                        {
+                            "time": 0.3333,
+                            "angle": -90
+                        }
+                    ]
+                },
+                "Timer_3": {
+                    "rotate": [
+                        {},
+                        {
+                            "time": 0.6667,
+                            "angle": 180
+                        }
+                    ]
+                },
+                "Timer_4": {
+                    "rotate": [
+                        {},
+                        {
+                            "time": 0.6667,
+                            "angle": 180
+                        },
+                        {
+                            "time": 1,
+                            "angle": 90
+                        }
+                    ]
+                },
+                "Sound": {
+                    "translate": [
+                        {
+                            "x": 400
+                        }
+                    ]
+                }
+            }
+        },
+        "Child": {
+            "slots": {
+                "Eye": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Eye2": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Face": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Mouth": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Pencil": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "Child2": {
+                    "rotate": [
+                        {},
+                        {
+                            "time": 0.5,
+                            "angle": 8.13
+                        },
+                        {
+                            "time": 1
+                        }
+                    ]
+                },
+                "Pencil": {
+                    "rotate": [
+                        {},
+                        {
+                            "time": 0.5,
+                            "angle": -7.35
+                        },
+                        {
+                            "time": 1
+                        }
+                    ]
+                },
+                "Sound": {
+                    "translate": [
+                        {
+                            "x": -400
+                        }
+                    ]
+                },
+                "Child": {
+                    "scale": [
+                        {
+                            "x": 3.333,
+                            "y": 3.333
+                        }
+                    ]
+                },
+                "Graph": {
+                    "translate": [
+                        {
+                            "x": 400
+                        }
+                    ]
+                }
+            }
+        },
+        "Graph": {
+            "slots": {
+                "Dot": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Dot2": {
+                    "color": [
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Dot3": {
+                    "color": [
+                        {
+                            "time": 0.6667,
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Dot4": {
+                    "color": [
+                        {
+                            "time": 1,
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Graph1": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Graph2": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Graph3": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Graph4": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Graph5": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Graph6": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Line": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Line2": {
+                    "color": [
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Line3": {
+                    "color": [
+                        {
+                            "time": 0.6667,
+                            "color": "ffffffff"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "Line": {
+                    "scale": [
+                        {},
+                        {
+                            "time": 0.3333,
+                            "x": 13.288
+                        }
+                    ]
+                },
+                "Graph7": {
+                    "scale": [
+                        {},
+                        {
+                            "time": 1.1667,
+                            "x": 0.61
+                        }
+                    ]
+                },
+                "Graph6": {
+                    "scale": [
+                        {},
+                        {
+                            "time": 1.1667,
+                            "x": 2.219
+                        }
+                    ]
+                },
+                "Graph5": {
+                    "scale": [
+                        {},
+                        {
+                            "time": 1.1667,
+                            "x": 1.573
+                        }
+                    ]
+                },
+                "Graph4": {
+                    "scale": [
+                        {},
+                        {
+                            "time": 1.1667,
+                            "x": 2.723
+                        }
+                    ]
+                },
+                "Graph3": {
+                    "scale": [
+                        {},
+                        {
+                            "time": 1.1667,
+                            "x": 2.335
+                        }
+                    ]
+                },
+                "Graph2": {
+                    "scale": [
+                        {},
+                        {
+                            "time": 1.1667,
+                            "x": 1.146
+                        }
+                    ]
+                },
+                "Graph": {
+                    "scale": [
+                        {
+                            "x": 3.333,
+                            "y": 3.333
+                        }
+                    ]
+                },
+                "Dot2": {
+                    "scale": [
+                        {
+                            "time": 0.3333
+                        },
+                        {
+                            "time": 0.4333,
+                            "x": 4,
+                            "y": 4
+                        },
+                        {
+                            "time": 0.5,
+                            "x": 3.333,
+                            "y": 3.333
+                        }
+                    ]
+                },
+                "Dot3": {
+                    "scale": [
+                        {
+                            "time": 0.6667
+                        },
+                        {
+                            "time": 0.7667,
+                            "x": 4,
+                            "y": 4
+                        },
+                        {
+                            "time": 0.8333,
+                            "x": 3.333,
+                            "y": 3.333
+                        }
+                    ]
+                },
+                "Line2": {
+                    "scale": [
+                        {
+                            "time": 0.3333
+                        },
+                        {
+                            "time": 0.6667,
+                            "x": 14.114
+                        }
+                    ]
+                },
+                "Line3": {
+                    "scale": [
+                        {
+                            "time": 0.6667
+                        },
+                        {
+                            "time": 1,
+                            "x": 17.436
+                        }
+                    ]
+                },
+                "Dot4": {
+                    "scale": [
+                        {
+                            "time": 1
+                        },
+                        {
+                            "time": 1.1,
+                            "x": 4,
+                            "y": 4
+                        },
+                        {
+                            "time": 1.1667,
+                            "x": 3.333,
+                            "y": 3.333,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 1.5,
+                            "x": 3.333,
+                            "y": 3.333
+                        }
+                    ]
+                },
+                "Child": {
+                    "translate": [
+                        {
+                            "x": -400
+                        }
+                    ]
+                }
+            }
+        },
+        "Mobile": {
+            "slots": {
+                "Handphone": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "Handphone": {
+                    "rotate": [
+                        {
+                            "angle": 5
+                        },
+                        {
+                            "time": 0.5,
+                            "angle": -5
+                        },
+                        {
+                            "time": 1,
+                            "angle": 5
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 3.333,
+                            "y": 3.333
+                        }
+                    ]
+                },
+                "Timer": {
+                    "translate": [
+                        {
+                            "x": 400
+                        }
+                    ]
+                }
+            }
+        },
+        "Sound": {
+            "slots": {
+                "Sound1": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Sound2": {
+                    "color": [
+                        {
+                            "time": 0.1667,
+                            "color": "ffffff00"
+                        },
+                        {
+                            "time": 0.5,
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "Sound3": {
+                    "color": [
+                        {
+                            "time": 0.5,
+                            "color": "ffffff00"
+                        },
+                        {
+                            "time": 0.8333,
+                            "color": "ffffffff"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "Sound": {
+                    "translate": [
+                        {},
+                        {
+                            "time": 0.6,
+                            "y": 13.33
+                        },
+                        {
+                            "time": 1.1667
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 3.333,
+                            "y": 3.333
+                        }
+                    ]
+                },
+                "Child": {
+                    "translate": [
+                        {
+                            "x": 400
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

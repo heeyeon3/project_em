@@ -1,0 +1,153 @@
+
+MemoryObj.png
+size: 1626,698
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ball
+  rotate: false
+  xy: 2, 466
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Banana
+  rotate: false
+  xy: 2, 234
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Bear
+  rotate: false
+  xy: 234, 466
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Book
+  rotate: false
+  xy: 2, 2
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Camera
+  rotate: false
+  xy: 234, 234
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Cap
+  rotate: false
+  xy: 466, 466
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Car
+  rotate: false
+  xy: 234, 2
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Compass
+  rotate: false
+  xy: 466, 234
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Cup
+  rotate: false
+  xy: 698, 466
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Guitar
+  rotate: false
+  xy: 466, 2
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+LunchBox
+  rotate: false
+  xy: 698, 234
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Palette
+  rotate: false
+  xy: 930, 466
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Pencil
+  rotate: false
+  xy: 698, 2
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Picture
+  rotate: false
+  xy: 930, 234
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Robot
+  rotate: false
+  xy: 1162, 466
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Shoes
+  rotate: false
+  xy: 930, 2
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Sunglasses
+  rotate: false
+  xy: 1162, 234
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Toothbrush
+  rotate: false
+  xy: 1394, 466
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+Toy
+  rotate: false
+  xy: 1162, 2
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+UICheck
+  rotate: false
+  xy: 1394, 167
+  size: 77, 65
+  orig: 77, 65
+  offset: 0, 0
+  index: -1
+Umbrella
+  rotate: false
+  xy: 1394, 234
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1

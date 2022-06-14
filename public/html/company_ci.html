@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>CI - eMotiV</title>
+<!-- 공통 링크 시작 -->
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/contents.css">
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/jquery.scrollbar.js"></script>
+<script type="text/javascript" src="./js/pbCommon.js"></script>
+<!-- //공통 링크 끝 -->
+</head>
+<body>
+<form method="post" action="" id="form1">
+<!-- wrap 시작 -->
+<div id="wrap">
+    <!-- header 시작 -->
+    <div id="header">
+		<div class="header_inner mob_menu">
+            <div class="header_tit">			 
+                <h1>회사소개</h1>
+                <a href="/login" class="btn_login">로그인</a>				
+                <div class="profile_sel">
+                    <button type="button" class="btn_profile_sel" id="btnProfileSel"><img src="./images/user_set.png" alt="" class=""><span class="hide">프로필선택</span></button>
+                    <div class="profile_menu">
+                        <button type="button" id="btnProfile">프로필 변경</button>
+                        <button type="button" id="btnLogout">로그아웃</button>
+                    </div>
+                </div>
+                <button type="button" class="btn_menu_open">메뉴 열기</button>				
+            </div>
+            <nav class="menu_wrap">				
+                <div class="lnb_tit">
+                    <strong class="menu_logo">전체메뉴</strong>
+                    <button type="button" class="btn_menu_close">메뉴 닫기</button>
+                </div>
+                <div class="user_info">
+                    <div class="user_logout"><span>로그인을 해주세요.</span><a href="/login" class="btn_login">로그인</a></div>
+                    <div class="user_login"><strong>hhhtnwls</strong>님 안녕하세요.</div>
+                </div>
+                <ul class="nav_menu">
+                    <li class="menu_home"><a href="/">홈</a></li>
+                    <li class="menu_company"><a href="/company_info" class="active">회사소개</a></li>
+                    <li class="menu_star"><a href="/service_star">Star Ruckus</a></li>
+                    <li class="menu_edu"><a href="edu_info.html">교육</a></li>
+                    <li class="menu_chart"><a href="/digitalchart_info">디지털차트</a></li>
+                    <li class="menu_my"><a href="mypage_info.html">마이페이지</a></li>
+                </ul>
+                <div class="menu_logout"><button type="button" id="btnLogoutMenu">로그아웃</button></div>					
+            </nav>
+        </div>	
+	</div>
+    <!-- header 끝 -->
+    
+    <!-- container 시작 -->
+    <div id="container">
+		<!-- content 시작 -->
+        <div id="content">
+			
+            <div class="company_wrap">
+                <h2 class="mob">회사소개</h2>
+                <!-- 서브메뉴 시작 -->
+                <ul class="sub_menu">
+                    <li><a href="/company_info">소개</a></li>
+                    <li class="active"><a href="company_ci.html">CI</a></li>
+                    <li><a href="company_news.html">뉴스</a></li>
+                </ul>	
+                <!-- // 서브메뉴 끝 -->
+                <section class="ci_conts">
+                    <h3>이모티브 CI</h3>
+                    <p class="summary">CI에는 이모티브의 이념이 담겨 있습니다.<br>임의로 비율을 조정하거나 지정되지 않은 색상을 적용하는 것을 금지합니다.</p>
+                    <div class="img_logo">
+                        <span class="ci01">로고</span>
+                        <span class="ci02">로고+슬로건</span>    
+                    </div>
+                    <div class="btn_wrap"><button type="button" class="btn_line" id="">PNG 다운로드</button></div>
+                </section>
+
+                <section class="ci_conts">
+                    <h3>스타루커스 BI</h3>
+                    <p class="summary">아동을 위한 인지능력 강화를 위한 STAR RUCKUS 게임 로고입니다.<br>임의로 비율을 조정하거나 지정되지 않은 색상을 적용하는 것을 금지합니다.</p>
+                    <div class="img_logo">
+                        <span class="bi01">영문</span>
+                        <span class="bi02">한글</span>  
+                    </div>
+                    <div class="btn_wrap"><button type="button" class="btn_line" id="">PNG 다운로드</button></div>
+                </section>
+
+            </div>
+			
+
+        </div>
+        <!-- //content 끝 -->
+    </div>
+    <!-- //container 끝 -->
+	<!-- footer 시작-->
+    <footer id="footer">
+		<div class="footer_inner">
+			<h2>(주)이모티브</h2>
+			<div class="footer_addr">대표자 : 민정상 / 사업자등록번호 : 894-87-01889 <span class="mob_inline">주소 : 서울특별시 강남구 테헤란로 92길 11, 3층 / 전화번호 : 02-508-2813</span></div>
+			<div class="footer_menu">
+				<button type="button" id="" onclick="privacypolicy()">개인정보처리방침</button>
+				<button type="button" id="" onclick="terms()">이용약관</button>
+				<a href="/faq">FAQ</a>
+			</div>
+			<p class="footer_copy">Copyright emotive CO., LTD. ALL RIGHTS RESERVED.</p>
+		</div>		
+	</footer>
+    <!-- //footer 끝-->	
+</div>
+<!-- //wrap 끝 -->
+	
+<!-- page script 시작 -->
+<script type="text/javascript">			
+$(document).ready(function(){	
+
+
+});		
+</script>
+<!-- //page script 끝 -->	
+</form>
+</body>
+</html>

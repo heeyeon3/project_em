@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Star Ruckus - eMotiV</title>
+<!-- 공통 링크 시작 -->
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/contents.css">
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.scrollbar.js"></script>
+<script type="text/javascript" src="../js/pbCommon.js"></script>
+
+<!-- 로그인 로그아웃 -->
+<script src="../javascripts/login.js"></script>
+<!-- //공통 링크 끝 -->
+<style>
+    .scroll {
+        overflow: hidden;
+        animation-name: scroll;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .scroll_add {
+        overflow: hidden;
+        animation-name: scroll_add;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+
+    @keyframes scroll {
+        /* 0%{height: auto;} */
+        /* 10%{height: 10px;} */
+        20%{height: 20px;}
+        30%{height: 30px;}
+        40%{height: 40px;}
+        50%{height: 50px;}
+        60%{height: 60px;}
+        70%{height: 70px;}
+        80%{height: 80px;}
+        90%{height: 90px;}
+        100% {height: auto; }
+    }
+
+    @keyframes scroll_add {
+
+        from {
+            transform: translateY(36px) scaleY(1);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0) scaleY(1);
+            opacity: 1;
+        }
+
+    }
+</style>
+</head>
+<body>
+<form method="post" action="" id="form1">
+<!-- wrap 시작 -->
+<div id="wrap">
+    <!-- header 시작 -->
+    <div id="header">
+        <div class="header_inner mob_menu">
+            <div class="header_tit">			 
+                <h1>Star Ruckus</h1>
+                <a href="/login" class="btn_login">로그인</a>				
+                <div class="profile_sel">
+                    <button type="button" class="btn_profile_sel" id="btnProfileSel"><img id="btnProfileSel_img" src="./images/@profile01.png" alt="" class=""><span class="hide">프로필선택</span></button>
+                    <div class="profile_menu">
+                        <button type="button" id="btnProfile" onclick="openLayerPopup('popProfilePopup')">프로필 변경</button>
+				        <button type="button" id="btnLogout" onclick="logout()">로그아웃</button>
+                    </div>
+                </div>
+                <button type="button" class="btn_menu_open">메뉴 열기</button>				
+            </div>
+            <nav class="menu_wrap">				
+                <div class="lnb_tit">
+                    <strong class="menu_logo">전체메뉴</strong>
+                    <button type="button" class="btn_menu_close">메뉴 닫기</button>
+                </div>
+                <div class="user_info">
+                    <div class="user_logout"><span>로그인을 해주세요.</span><a href="/login" class="btn_login">로그인</a></div>
+                    <div class="user_login"><strong>hhhtnwls</strong>님 안녕하세요.</div>
+                </div>
+                <!-- 2022.01.26일 추가 시작-->
+				<div class="sel_language">
+					<button type="button" class="on">한국어</button>
+					<button type="button" class="off">English</button>
+				</div>
+				<!-- 2022.01.26일 추가 끝-->
+                <ul class="nav_menu">
+                    <li class="menu_home"><a href="/">홈</a></li>
+                    <li class="menu_company"><a href="/company_info">회사소개</a></li>
+                    <li class="menu_star"><a href="/star_info" class="active">Star Ruckus</a></li>
+                    <li class="menu_edu"><a href="/edu_info">교육</a></li>                    
+                    <li class="menu_chart"><a href="/digitalchart_info">디지털차트</a></li>
+                    <li class="menu_my"><a href="/mypage_info">마이페이지</a></li>
+                </ul>
+                <div class="menu_logout"><button type="button" id="btnLogoutMenu" onclick="logout()">로그아웃</button></div>					
+            </nav>
+        </div>
+	</div>
+    <!-- header 끝 -->
+    
+    <!-- container 시작 -->
+    <div id="container">
+		<!-- content 시작 -->
+        <div id="content">
+
+            <div class="star_wrap">
+                <h2 class="mob">Star Ruckus</h2>                
+                <div class="star_conts" id="star_ruckus_img" style="height: calc(100vh - 150px); margin-top: 15vh;">
+                    <strong class="copy_head img_star">아이와 일상의 행복을<br>갖도록 도와드려요</strong>
+                    <p class="copy_sub small">아이가 산만하고, 하나에 집중하지 못하나요?<br>아이의 인지상태를 간편하게 확인할 수 있어요.</p>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_default_round small" id="">다운로드</button>
+                    </div>
+                    <div class="scroll">
+                        <span class="ico_scroll">Scroll</span>
+                    </div>
+                </div>
+
+                <section class="star_conts scroll_add">
+                    <h3>인지평가</h3>
+                    <strong class="copy_head">다양한 게임을 즐기면서 인지 상태를 평가해보세요</strong>
+                    <p class="copy_sub">게임을 하며 측정된 행동 데이터를 바탕으로 기억력, 억제력, 주의력, 유연성, 처리속도의 5가지 인지 평가요소를 측정해요. 재미있는 게임 형식으로 아이가 스스로 인지 상태를 평가할거에요.</p>
+                </section>
+
+                <section class="star_conts">
+                    <h3>인지 상태 평가</h3>
+                    <p class="copy_sub small">정확한 인지요소 측정을 위해 5가지의 게임을 한 번에 이어서 수행해주세요. <span class="mob_inline">총 20분이 소요되며, 분기별로 한 번씩 해주세요.</span></p>
+                </section>
+            </div>
+
+            <div class="star_wrap_list">
+                <ul class="star_list col5">
+                    <li>
+                        <span class="img"><img src="./images/img_game0101.png" alt=""></span>
+                        <span class="type">억제력</span>
+                        <strong class="tit">적을 맞춰라</strong>
+                        <p class="text">목표 비행물체를 구분하여 선택하기</p>
+                    </li>
+                    <li>
+                        <span class="img"><img src="./images/img_game0102.png" alt=""></span>
+                        <span class="type">주의력</span>
+                        <strong class="tit">별자리 만들기</strong>
+                        <p class="text">색깔을 번갈아가며 별자리를 연결하기</p>
+                    </li>
+                    <li>
+                        <span class="img"><img src="./images/img_game0103.png" alt=""></span>
+                        <span class="type">유연성</span>
+                        <strong class="tit">지혜의 퍼즐</strong>
+                        <p class="text">같은 색깔 또는 모양을 찾기</p>
+                    </li>
+                    <li>
+                        <span class="img"><img src="./images/img_game0104.png" alt=""></span>
+                        <span class="type">기억력</span>
+                        <strong class="tit">도전! 베르</strong>
+                        <p class="text">주어진 숫자를 거꾸로 입력하기</p>
+                    </li>
+                    <li>
+                        <span class="img"><img src="./images/img_game0105.png" alt=""></span>
+                        <span class="type">처리속도</span>
+                        <strong class="tit">병사 찾기</strong>
+                        <p class="text">똑같은 무기를 가진 병사를 찾기</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="star_wrap_bg">
+                <section class="star_conts">
+                    <h3>인지 강화</h3>
+                    <strong class="copy_head">다양한 게임을 즐기면서 인지 능력을 키워보세요</strong>
+                    <p class="copy_sub">Stroop Task, Simon Task, Driving Task를 여러 개의 게임에 녹여냈어요. 아동들이 스스로 몰입하여 게임을 즐기는 동안 자연스럽게 인지능력이 강화되어요.</p>
+                </section>
+                <section class="star_conts">
+                    <h3>인지 상태 강화</h3>
+                    <p class="copy_sub small"> 주 5회, 하루 20~30분의 사용을 권장해요. <span class="mob_inline">최대 1시간을 넘지 않도록 보호자들께서 시간을 관리해주세요.</span></p>
+                </section>
+                <div class="star_wrap_list">
+                    <ul class="star_list col2">
+                        <li>
+                            <span class="img"><img src="./images/img_game0201.png" alt=""></span>
+                            <strong class="tit">공격 훈련</strong>
+                            <p class="text">화면을 좌우로 밀어 미사일을 피하는 동시에 주어진 색을 선택하는 미션</p>
+                        </li>
+                        <li>
+                            <span class="img"><img src="./images/img_game0202.png" alt=""></span>
+                            <strong class="tit">주행 훈련</strong>
+                            <p class="text">핸드폰을 기울여 장애물을 피해 주행하는 동안 목표물을 선택하는 미션</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="star_conts">
+                <h3>디지털차트</h3>
+                <strong class="copy_head">자녀의 인지 상태를 보기 쉽게 알려드려요</strong>
+                <p class="copy_sub">인지 평가 게임이 끝난 후, 아이의 인지 상태를 바로 확인하세요. <span class="mob_inline">이전 평가 결과와 비교를 통해 아이의 상태를 쉽게 이해 할 수 있어요.</span></p>
+                <div class="img_wrap01"><img src="./images/img_result01@2.png" alt="결과 그래프 샘플"></div>               
+            </section>
+
+            <div class="star_wrap_bg">
+                <div class="star_conts">
+                    <strong class="copy_head small">서비스 이용 방법</strong>
+                    <ul class="note">
+                        <li>1. 앱을 설치해주세요.</li>
+                        <li>2. 앱 또는 웹으로 회원가입을 해주세요.</li>
+                        <li>3. 무료체험 후 구독을 해주세요.</li>
+                        <li>4. 아이가 게임을 하도록 해주세요.</li>
+                        <li>5. 게임이 끝난 후 차트를 확인해주세요.(주간/월간)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="star_conts">
+                <p class="text_warning">자세한 사항은 아래 설명서를 통해 확인해주세요.</p>
+                <div class="btn_wrap">
+                    <button type="button" class="btn_default_round small" id="">설명서 다운로드</button>
+                </div>
+            </div>
+			
+        </div>
+        <!-- //content 끝 -->
+    </div>
+    <!-- //container 끝 -->
+	<!-- footer 시작-->
+	<footer data-include="./html/com_footer.html"></footer>
+	<!-- //footer 끝-->
+</div>
+<!-- //wrap 끝 -->
+	
+<!-- page script 시작 -->
+<script type="text/javascript">			
+$(document).ready(function(){	
+
+});		
+</script>
+<!-- //page script 끝 -->	
+</form>
+</body>
+</html>
+
+<!-- 개인정보 처리방침 팝업 시작 -->
+<div class="pop_Wrap" id="popFullPopup2">
+	<section class="pop_full">
+        <h2>개인정보 처리방침</h2>	
+        <button type="button" class="btn_pop_close" data-hide-id="popFullPopup2" >창닫기</button>			
+		<div class="pop_conts">
+            <div class="conts_agree scrollbar-dynamic" id="popup2">
+               
+            </div>
+        </div>
+        <div class="btn_wrap">
+            <button type="button" class="btn_pop_confirm" id="popCloseFull02" onclick="closeLayerPopup('popFullPopup2')">확인</button>
+        </div>		
+	</section>
+</div>
+
+<!-- 서비스 이용약관 팝업 시작 -->
+<div class="pop_Wrap" id="popFullPopup3">
+	<section class="pop_full">
+        <h2>서비스 이용약관</h2>	
+        <button type="button" class="btn_pop_close" data-hide-id="popFullPopup3" >창닫기</button>			
+		<div class="pop_conts">
+            <div class="conts_agree scrollbar-dynamic" id="popup3">
+            </div>
+        </div>
+        <div class="btn_wrap">
+            <button type="button" class="btn_pop_confirm" id="popCloseFull03" onclick="closeLayerPopup('popFullPopup3')">확인</button>
+        </div>		
+	</section>
+</div>
+<!-- //서비스 이용약관 팝업 끝 -->
+
+
+<!-- 프로필 선택 팝업 시작 -->
+<div class="pop_Wrap" id="popProfilePopup">
+	<section class="pop_full profile">
+        <button type="button" class="btn_pop_close" data-hide-id="popProfilePopup" >창닫기</button>
+        <div class="pop_porfile_wrap">
+            <h2>프로필을 선택해주세요</h2>			
+            <div class="pop_conts profile">
+                <div class="conts_profile"  id="conts_profile">
+                
+                </div>
+                <div class="btn_wrap single">
+                    <button type="button" class="btn_pop_confirm" id="popCloseJoinEnd">프로필 관리</button>
+                </div>
+            </div>
+        </div>		
+	</section>
+</div>
+<!-- //프로필 선택 팝업 끝 -->

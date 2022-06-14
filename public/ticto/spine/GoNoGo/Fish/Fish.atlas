@@ -1,0 +1,48 @@
+
+Fish.png
+size: 1508,1142
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Fish1
+  rotate: false
+  xy: 2, 572
+  size: 751, 568
+  orig: 751, 568
+  offset: 0, 0
+  index: -1
+Fish1Eye
+  rotate: false
+  xy: 789, 203
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+Fish2
+  rotate: false
+  xy: 2, 2
+  size: 751, 568
+  orig: 751, 568
+  offset: 0, 0
+  index: -1
+Fish3
+  rotate: false
+  xy: 755, 572
+  size: 751, 568
+  orig: 751, 568
+  offset: 0, 0
+  index: -1
+Hook
+  rotate: false
+  xy: 789, 249
+  size: 147, 321
+  orig: 147, 321
+  offset: 0, 0
+  index: -1
+Rope
+  rotate: false
+  xy: 755, 108
+  size: 32, 462
+  orig: 32, 462
+  offset: 0, 0
+  index: -1

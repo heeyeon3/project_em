@@ -1,0 +1,90 @@
+
+DCCSEagle.png
+size: 1406,1067
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+EagleArm1_1
+  rotate: false
+  xy: 952, 74
+  size: 208, 231
+  orig: 208, 231
+  offset: 0, 0
+  index: -1
+EagleArm1_2
+  rotate: false
+  xy: 1117, 713
+  size: 287, 352
+  orig: 287, 352
+  offset: 0, 0
+  index: -1
+EagleArm1_3
+  rotate: false
+  xy: 693, 566
+  size: 210, 499
+  orig: 210, 499
+  offset: 0, 0
+  index: -1
+EagleArm1_4
+  rotate: false
+  xy: 905, 566
+  size: 210, 499
+  orig: 210, 499
+  offset: 0, 0
+  index: -1
+EagleArm2
+  rotate: false
+  xy: 693, 307
+  size: 341, 257
+  orig: 341, 257
+  offset: 0, 0
+  index: -1
+EagleBody
+  rotate: false
+  xy: 1036, 339
+  size: 327, 223
+  orig: 327, 223
+  offset: 0, 0
+  index: -1
+EagleNeck
+  rotate: false
+  xy: 1162, 173
+  size: 185, 164
+  orig: 185, 164
+  offset: 0, 0
+  index: -1
+Feather
+  rotate: false
+  xy: 1117, 564
+  size: 273, 147
+  orig: 273, 147
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 461
+  size: 689, 604
+  orig: 689, 604
+  offset: 0, 0
+  index: -1
+Mouth1
+  rotate: false
+  xy: 618, 87
+  size: 332, 218
+  orig: 332, 218
+  offset: 0, 0
+  index: -1
+Mouth2
+  rotate: false
+  xy: 2, 2
+  size: 187, 88
+  orig: 187, 88
+  offset: 0, 0
+  index: -1
+Window
+  rotate: false
+  xy: 2, 92
+  size: 614, 367
+  orig: 614, 367
+  offset: 0, 0
+  index: -1

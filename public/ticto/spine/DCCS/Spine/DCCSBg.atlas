@@ -1,0 +1,48 @@
+
+DCCSBg.png
+size: 1796,860
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DCCSBg
+  rotate: false
+  xy: 2, 2
+  size: 1202, 856
+  orig: 1202, 856
+  offset: 0, 0
+  index: -1
+RedLight
+  rotate: false
+  xy: 1688, 496
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+Sky
+  rotate: false
+  xy: 1206, 272
+  size: 480, 270
+  orig: 480, 270
+  offset: 0, 0
+  index: -1
+Star
+  rotate: false
+  xy: 1206, 73
+  size: 117, 120
+  orig: 117, 120
+  offset: 0, 0
+  index: -1
+Starship
+  rotate: false
+  xy: 1206, 544
+  size: 588, 314
+  orig: 588, 314
+  offset: 0, 0
+  index: -1
+StarshipShadow
+  rotate: false
+  xy: 1206, 195
+  size: 323, 75
+  orig: 323, 75
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="ko">
+<head> 
+<meta charset="utf-8"/>
+<title>eMotiV 코딩리스트</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="./codinglist/fileList.css" rel="stylesheet" type="text/css">
+<script src="./codinglist/jquery-2.0.3.min.js"></script>
+<script src="./codinglist/fileList.js"></script>
+</head>
+
+<body>
+<div class="overlay"></div>
+<div class="guideWrap">
+	<h1>eMotiV 코딩리스트</h1>
+	<p class="h1Info">본 코딩리스트는 IE9이상, 크롬, 파이어폭스, 사파리등 표준 브라우저에 최적화되어있습니다.</p>
+	<div class="notice">
+		<section>
+			<h2>개발자 알림</h2>
+			<ul>
+				<li>id value 중 ui~, pb~로 시작하는 것은 수정하지 말아주세요. <br>그외 id는 수정이 가능하며 ui~, pb~로 시작하는 것의 수정이 필요할 경우 퍼블리셔와 상의해주세요.</li>
+				<li>class value 및 css파일은 수정을 불가합니다.</li>
+				<li>markup의 위치를 임의 변경 하지 말아주세요. <br> 논리적으로 markup된것 이므로 수정을 해야 할 경우 퍼블리셔와 상의해주세요.</li>
+			</ul>
+		</section>
+		<section>
+			<h2>퍼블리셔 알림</h2>
+			<ul>
+				<li>모바일용 html파일은 PC 크롬, 사파리브라우저에서 작업 및 확인 하며, 최종 작업물은 mobile에서 화면 확인을 기준으로 함</li>
+				<li>크로스device 범위는 선정된 device를 기준으로 함</li>
+				<li>수정이 발생될 경우 수정이력에 수정날짜 및 수정내용을 명시</li>
+                <li>작업전 <span class="ico none">none</span> - 작업시작전</li>
+				<li>작업중 <span class="ico ing">ing</span> - 작업자가 퍼블리싱이 시작된 이후 부터 작업 완료 전까지</li>
+				<li>작업완료 <span class="ico done">done</span> -  작업자가 wireframe/디자인을 적용 후 크로스device 체크 까지 완료</li>
+				<li>수정 <span class="ico edit">edit</span> - 개발자에게 배포 이후 수정 작업</li>
+			</ul>
+		</section>
+	</div>
+	<ul class="siteInfo">
+		<li><strong>전체 페이지 </strong><span class="ico total"></span>
+			<strong>작업중 </strong><span class="ico ing"></span><span id="ingRate" class="ico rate"></span>
+			<strong>작업완료 </strong><span class="ico done"></span><span id="doneRate" class="ico rate"></span>
+			<strong>배포 완료 후 수정 </strong><span class="ico edit"></span><span id="editRate" class="ico rate"></span>
+		</li>
+	</ul>
+	<section id="tabCont2">
+		<h2>컨텐츠 페이지</h2>
+		<table class="tblList" id="table1">
+			<colgroup>
+				<col style="width:120px" />
+				<col style="width:260px" />
+				<col style="width:200px" />
+                <col style="width:70px" />
+				<col style="width:70px" />
+				<col style="width:auto" />
+				<col style="width:auto" />
+			</colgroup>
+			<thead>
+				<tr>
+                	<th scope="col">D1</th>
+					<th scope="col">D2</th>
+					<th scope="col">화면ID<br>파일명</th>
+					<th scope="col">작업<br>완료일</th>
+					<th scope="col">최종<br>수정일</th>
+					<th scope="col">수정이력</th>
+					<th scope="col">비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="newCont">
+					<td>common</td>
+					<td>layout_header_basic</td>
+                    <td class="link"><a target="_blank" href="layout_header_basic.html">layout_header_basic</a></td>
+					<td class="finishD">&nbsp;</td>
+					<td class="editD"><span class="ico edit">03.15</span></td>
+					<td class="editMemo">신규페이지 작성할때 사용, 모바일에서 햄버거 메뉴가 있는 기본 header임
+						<ul>
+							<li>- 메뉴구성 변경, 프로필선택 하위메뉴 변경</li>
+							<li>- pbCommon.js 수정됨 ( 22.03 찾기 )</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+								
+				<tr class="">
+					<td>&nbsp;</td>
+					<td>layout_header_tit</td>
+                    <td class="link"><a target="_blank" href="layout_header_tit.html">layout_header_tit</a></td>
+					<td class="finishD">&nbsp;</td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">모바일에서 햄버거 메뉴가 없고 타이틀과 back버튼이 있는 경우 사용</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="">
+					<td>&nbsp;</td>
+					<td>layout_header_back</td>
+                    <td class="link"><a target="_blank" href="layout_header_back.html">layout_header_back</a></td>
+					<td class="finishD">&nbsp;</td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">모바일에서 햄버거 메뉴가 없고 back버튼만 있는 경우</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="">
+					<td>&nbsp;</td>
+					<td>layout_header_menu</td>
+                    <td class="link"><a target="_blank" href="layout_header_menu.html">layout_header_menu</a></td>
+					<td class="finishD">&nbsp;</td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">모바일에서 햄버거 메뉴 있고, 타이틀이 있는 경우 사용</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="">
+					<td>&nbsp;</td>
+					<td>layout_popup</td>
+                    <td class="link"><a target="_blank" href="layout_popup.html">layout_popup</a></td>
+					<td class="finishD">&nbsp;</td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">
+						<ul>
+							<li>layer 팝업 모음</li>
+							<li>- 22.03 프로필 추가, 수정할 프로필선택 삭제</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="">
+					<td>&nbsp;</td>
+					<td>com_footer</td>
+                    <td class="link"><a target="_blank" href="com_footer.html">com_footer</a></td>
+					<td class="finishD">&nbsp;</td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">include파일로 footer가 있는 경우에만 사용</td>					
+					<td class="memo">- 12월28일 : footer 컨텐츠 변경 되어 모든 페이지에 다 적용했음</td>
+				</tr>				
+				<tr class="newCont">
+					<td>Main</td>
+					<td>&nbsp;</td>
+                    <td class="link"><a target="_blank" href="/">main</a></td>
+					<td class="finishD"><span class="ico done">03.23</span></td>
+					<td class="editD"><span class="ico edit">03.23</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 컨텐츠변경으로 마크업 전체 수정</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>[팝업]앱다운로드</td>
+                    <td class="link">layout_popup에 있음</td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>				
+				<tr>
+					<td>&nbsp;</td>
+					<td>[팝업]개인정보처리방침</td>
+                    <td class="link">layout_popup에 있음</td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>[팝업]이용약관(서비스이용약관)</td>
+                    <td class="link">layout_popup에 있음</td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>				
+				<tr>
+					<td>로그인/회원가입</td>
+					<td>로그인</td>
+                    <td class="link"><a target="_blank" href="/login">login</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>				
+				<tr>
+					<td>&nbsp;</td>
+					<td>회원가입 - 핸드폰번호</td>
+                    <td class="link"><a target="_blank" href="join_phone.html">join_phone</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>회원가입 - 계정생성</td>
+                    <td class="link"><a target="_blank" href="join_account.html">join_account</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>[팝업]회원가입 - 제3자 개인정보 제공동의</td>
+                    <td class="link">layout_popup에 있음</td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>				
+				<tr>
+					<td>&nbsp;</td>
+					<td>[팝업]회원가입 -개인정보 처리방침</td>
+                    <td class="link">layout_popup에 있음</td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">footer에 있는 개인정보 처리방침하고 동일 파일</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>[팝업]회원가입 - 서비스 이용약관</td>
+                    <td class="link">layout_popup에 있음</td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">footer에 있는 이용약관하고 동일 파일</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>이메일 찾기</td>
+                    <td class="link"><a target="_blank" href="find_email.html">find_email</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>비밀번호 찾기</td>
+                    <td class="link"><a target="_blank" href="/find_pw">find_pw</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>자녀의 프로필 설정</td>
+                    <td class="link"><a target="_blank" href="profile_setting.html">profile_setting</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD"><span class="ico edit">03.15</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 사진 이미지 추가 (22.03 주석찾기)</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>프로필 선택</td>
+                    <td class="link"><a target="_blank" href="profile_select.html">profile_select</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD"><span class="ico edit">03.15</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 팝업에서 일반 페이지로 변경되면서 컨텐츠 마크업도 전부 변경됨</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>프로필관리</td>
+					<td>수정할 프로필 선택</td>
+                    <td class="link"><a target="_blank" href="profile_select_modify.html">profile_select_modify</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD"><span class="ico edit">03.15</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 팝업에서 일반 페이지로 변경되면서 컨텐츠 마크업도 전부 변경됨</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>프로필 추가 / 수정</td>
+                    <td class="link"><a target="_blank" href="/profile_modify">profile_modify</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">타이틀 변경, 프로필삭제 버튼 안보이게 하면 추가 화면임</td>
+				</tr>				
+															
+				<tr class="newCont">
+					<td>회사소개</td>
+					<td>소개</td>
+                    <td class="link"><a target="_blank" href="/company_info">company_info</a></td>
+					<td class="finishD"><span class="ico done">12.29</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 컨텐츠변경으로 마크업 전체 수정</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>[새창]뉴스 더보기</td>
+                    <td class="link"><a target="_blank" href="company_news.html">company_news</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 별도의 새창이라 header부분이 간략하게 바뀜</li>
+							<li>- div class company_wrap이 news_wrap으로 변경</li>
+							
+							<li>- h2의 타이틀 변경</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="delCont">
+					<td>&nbsp;</td>
+					<td>CI</td>
+                    <td class="link"><a target="_blank" href="company_ci.html">company_ci</a></td>
+					<td class="finishD"><span class="ico none">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>								
+				<tr class="newCont">
+					<td>서비스</td>
+					<td>스타러커스</td>
+                    <td class="link"><a target="_blank" href="/service_star">service_star</a></td>
+					<td class="finishD"><span class="ico done">12.28</span></td>
+					<td class="editD"><span class="ico edit">03.18</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 컨텐츠 변경으로 전체 페이지 수정</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>				
+				<tr class="newCont">
+					<td></td>
+					<td>스타러커스 for ADHD</td>
+                    <td class="link"><a target="_blank" href="/service_adhd">service_adhd</a></td>
+					<td class="finishD"><span class="ico done">03.18</span></td>
+					<td class="editD"><span class="ico edit">03.18</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 신규페이지</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td></td>
+					<td>스타러커스 째깍섬 탈출</td>
+                    <td class="link"><a target="_blank" href="/service_land">service_land</a></td>
+					<td class="finishD"><span class="ico done">03.18</span></td>
+					<td class="editD"><span class="ico edit">03.18</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 신규페이지</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td></td>
+					<td>디지털 차트- 째깍섬 탈출</td>
+                    <td class="link"><a target="_blank" href="digitalchart_land.html">digitalchart_land</a></td>
+					<td class="finishD"><span class="ico done">03.18</span></td>
+					<td class="editD"><span class="ico edit">03.19</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 신규페이지</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td></td>
+					<td>디지털 차트 평가 - 진단전</td>
+                    <td class="link"><a target="_blank" href="/digitalchart_info">digitalchart_info</a></td>
+					<td class="finishD"><span class="ico done">12.24</span></td>
+					<td class="editD"><span class="ico edit">03.17</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 빨강 텍스트 수정</li>
+							<li>- 하단 버튼 텍스트 수정</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>		
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>디지털 차트 평가 - 분석결과</td>
+                    <td class="link"><a target="_blank" href="/digitalchart_result">digitalchart_result</a></td>
+					<td class="finishD"><span class="ico done">12.28</span></td>
+					<td class="editD"><span class="ico edit">03.17</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- class=user 안의 텍스트 수정</li>
+							<li>- 인지평가 리뷰의 차트에 범례추가</li>
+							<li>- 인지평가 리뷰의 차트아래에 컨텐츠들 텍스트 변경</li>
+							<li>- pay_none div 컨텐츠 전체 삭제</li>
+							<li>- digital_inner div만 삭제(밖같만)</li>
+							<li>- 지난달과의 비교 아래 컨텐츠 변경</li>
+							<li>- 지난달과의 비교 차트 컬러 변경(하단 스크립트에)</li>							
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>[팝업]5가지 요소가 뭐에요?</td>
+                    <td class="link">digitalchart_result에 있음</td>
+					<td class="finishD"><span class="ico done">12.28</span></td>
+					<td class="editD"><span class="ico edit">12.28</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 상단 머리 이미지 영역 마크업 수정</li>
+							<li>- 하단 5가지 요소 텍스트 확정되어 수정</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>디지털 차트 강화 - 진단전</td>
+                    <td class="link"><a target="_blank" href="/digitalchart_info2">digitalchart_info2</a></td>
+					<td class="finishD"><span class="ico done">12.24</span></td>
+					<td class="editD"><span class="ico edit">03.17</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 빨강 텍스트 수정</li>
+							<li>- 하단 버튼 텍스트 수정</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>			
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>디지털 차트 강화 - 분석결과</td>
+                    <td class="link"><a target="_blank" href="/digitalchart_result2">digitalchart_result2</a></td>
+					<td class="finishD"><span class="ico done">12.28</span></td>
+					<td class="editD"><span class="ico edit">03.17</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- class=user 안의 텍스트 수정</li>
+							<li>- 날짜 선택 select 수정</li>
+							<li>- 강화 결과리포트의 하위 텍스트 모두 수정</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>				
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>[팝업]주행 훈련 설명</td>
+                    <td class="link">digitalchart_result2에 있음</td>
+					<td class="finishD"><span class="ico done">12.28</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 타이틀 수정 (주행훈련->캐롯러너) </li>
+							<li>- explain_list ul 삭제 후 explain_top div가 대신 추가됨</li>
+							<li>- explain_list div 삭제 후 explain_info div가 대신 추가됨</li>
+							<li>- 하단 설명 텍스트 확정되어 수정</li>
+						</ul>						
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>[팝업]공격 훈련 설명</td>
+                    <td class="link">digitalchart_result2에 있음</td>
+					<td class="finishD"><span class="ico done">12.28</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 타이틀 수정 (공격훈련->컬러슈터) </li>
+							<li>- explain_list ul 삭제 후 explain_top div가 대신 추가됨</li>
+							<li>- explain_list div 삭제 후 explain_info div가 대신 추가됨</li>
+							<li>- 하단 설명 텍스트 확정되어 수정</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="delCont">
+					<td></td>
+					<td>교육 소개</td>
+                    <td class="link"><a target="_blank" href="edu_info.html">edu_info</a></td>
+					<td class="finishD"><span class="ico none">12.28</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>고객지원</td>
+					<td>고객지원</td>
+                    <td class="link"><a target="_blank" href="/faq">faq</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD"><span class="ico edit">03.15</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 타이틀 FAQ에서 고객지원으로 변경</li>
+							<li>- 탭명 변경</li>
+							<li>- 하단에 더 궁금한점 추가</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>구독하기</td>
+					<td>구독하기</td>
+                    <td class="link"><a target="_blank" href="/buy_sel">buy_sel</a></td>
+					<td class="finishD"><span class="ico done">12.17</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 컨텐츠변경으로 마크업 전체 수정</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>[팝업]구독하기 - 결제창</td>
+                    <td class="link">buy_sel에 있음</td>
+					<td class="finishD"><span class="ico done">12.17</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- class=pop_conts pay 의 pay를 class=pop_full 옆으로 옮김</li>
+							<li>- 결제창 팝업에서 x닫기 버튼 삭제</li>
+							<li>- 결제창 팝업에서 상단 내용 변경<br>
+								(월정액 구독권 ->프로필 1인<br>
+								상세 내용 -> 1인 프로필의 스타러커스 게임과 디지털차트)</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>				
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>결제완료</td>
+                    <td class="link"><a target="_blank" href="buy_end.html">buy_end</a></td>
+					<td class="finishD"><span class="ico done">12.17</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- 상단 내용 변경<br>(월정액 구독권 ->프로필 1인<br>
+								상세 내용 -> 1인 프로필의 스타러커스 게임과 디지털차트)</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="delCont">
+					<td>마이페이지</td>
+					<td>마이페이지</td>
+                    <td class="link"><a target="_blank" href="mypage_info.html">mypage_info</a></td>
+					<td class="finishD"><span class="ico none">12.15</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>회원정보 수정</td>
+					<td>핸드폰번호 수정</td>
+                    <td class="link"><a target="_blank" href="/mypage_phone">mypage_phone</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- content div 안의 전체 컨텐츠를 mypage_wrap div로 감쌈</li>
+							<li>- h2의 class hide를 mob로 변경</li>
+							<li>- h2아래의 page_nav 마크업 한줄 삭제</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>비밀번호 수정</td>
+                    <td class="link"><a target="_blank" href="/mypage_pw">mypage_pw</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- content div 안의 전체 컨텐츠를 mypage_wrap div로 감쌈</li>
+							<li>- h2의 class hide를 mob로 변경</li>
+							<li>- h2아래의 page_nav 마크업 한줄 삭제</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>회원탈퇴</td>
+                    <td class="link"><a target="_blank" href="/mypage_out">mypage_out</a></td>
+					<td class="finishD"><span class="ico done">12.15</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- content div 안에서 note_wrap div를 제외한 컨텐츠를 mypage_wrap div로 감쌈</li>
+							<li>- h2의 class hide를 mob로 변경</li>
+							<li>- h2아래의 page_nav 마크업 한줄 삭제</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>구독관리</td>
+					<td>구독관리</td>
+                    <td class="link"><a target="_blank" href="/buy_mng">buy_mng</a></td>
+					<td class="finishD"><span class="ico done">12.16</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- content div 안의 전체 컨텐츠를 buy_wrap div로 감쌈</li>
+							<li>- h2의 class hide를 mob로 변경</li>
+							<li>- h2아래의 page_nav 마크업 한줄 삭제</li>
+							<li>- buy_card_none 안의 카드등록 삭제</li>
+							<li>- 카드추가 버튼 추가</li>
+							<li>- 이용권구매 버튼 구독하기로 용어 변경</li>
+							<li>- 결제카드 등록 팝업 마크업 맨 하단에 추가</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>[팝업]구독하기 - 결제카드 등록</td>
+                    <td class="link">buy_mng에 있음</td>
+					<td class="finishD"><span class="ico done">03.15</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">신규작업</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>
+				<tr class="newCont">
+					<td>&nbsp;</td>
+					<td>구독취소</td>
+                    <td class="link"><a target="_blank" href="buy_cancel.html">buy_cancel</a></td>
+					<td class="finishD"><span class="ico done">12.17</span></td>
+					<td class="editD"><span class="ico edit">03.16</span></td>
+					<td class="editMemo">
+						<ul>
+							<li>- content div 안의 전체 컨텐츠를 buy_wrap div로 감쌈</li>
+							<li>- h2의 class hide를 mob로 변경</li>
+							<li>- h2아래의 page_nav 마크업 한줄 삭제</li>
+							<li>- buy_money div 삭제</li>
+							<li>- 구독목록 전체 수정</li>
+						</ul>
+					</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>	
+				<tr>
+					<td>&nbsp;</td>
+					<td>[팝업]이용권 환불 및 철회규정</td>
+                    <td class="link">buy_cancel에 있음</td>
+					<td class="finishD"><span class="ico done">12.17</span></td>
+					<td class="editD">&nbsp;</td>
+					<td class="editMemo">&nbsp;</td>					
+					<td class="memo">&nbsp;</td>
+				</tr>							
+			</tbody>
+		</table>        
+	</section>
+</div>
+</body>
+</html>

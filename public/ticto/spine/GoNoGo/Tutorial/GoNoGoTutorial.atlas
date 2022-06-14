@@ -1,0 +1,356 @@
+
+GoNoGoTutorial.png
+size: 3944,2190
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Cloud
+  rotate: false
+  xy: 1064, 1252
+  size: 668, 422
+  orig: 668, 422
+  offset: 0, 0
+  index: -1
+CrockArm
+  rotate: false
+  xy: 1508, 2
+  size: 334, 220
+  orig: 334, 220
+  offset: 0, 0
+  index: -1
+CrockBody
+  rotate: false
+  xy: 2, 1236
+  size: 1060, 952
+  orig: 1060, 952
+  offset: 0, 0
+  index: -1
+CrockEye1
+  rotate: false
+  xy: 120, 30
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+CrockEye3
+  rotate: false
+  xy: 216, 38
+  size: 60, 40
+  orig: 60, 40
+  offset: 0, 0
+  index: -1
+CrockLeg
+  rotate: false
+  xy: 755, 6
+  size: 74, 88
+  orig: 74, 88
+  offset: 0, 0
+  index: -1
+CrockMouth
+  rotate: false
+  xy: 2461, 11
+  size: 418, 144
+  orig: 418, 144
+  offset: 0, 0
+  index: -1
+Fish1
+  rotate: false
+  xy: 2, 80
+  size: 751, 568
+  orig: 751, 568
+  offset: 0, 0
+  index: -1
+Fish1Eye
+  rotate: false
+  xy: 170, 34
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+Fish2
+  rotate: false
+  xy: 508, 666
+  size: 751, 568
+  orig: 751, 568
+  offset: 0, 0
+  index: -1
+Fish3
+  rotate: false
+  xy: 755, 96
+  size: 751, 568
+  orig: 751, 568
+  offset: 0, 0
+  index: -1
+Flame_1
+  rotate: false
+  xy: 1064, 1676
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Flame_3
+  rotate: false
+  xy: 1578, 1676
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Flame_5
+  rotate: false
+  xy: 1261, 738
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Flame_7
+  rotate: false
+  xy: 2092, 1676
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Hill
+  rotate: false
+  xy: 2022, 457
+  size: 1920, 283
+  orig: 1920, 283
+  offset: 0, 0
+  index: -1
+O
+  rotate: false
+  xy: 2460, 1274
+  size: 400, 400
+  orig: 400, 400
+  offset: 0, 0
+  index: -1
+Plant1
+  rotate: false
+  xy: 3204, 1484
+  size: 200, 234
+  orig: 200, 234
+  offset: 0, 0
+  index: -1
+Plant2
+  rotate: false
+  xy: 3571, 200
+  size: 164, 255
+  orig: 164, 255
+  offset: 0, 0
+  index: -1
+Rock
+  rotate: false
+  xy: 2920, 190
+  size: 418, 265
+  orig: 418, 265
+  offset: 0, 0
+  index: -1
+Rock2
+  rotate: false
+  xy: 3340, 190
+  size: 229, 265
+  orig: 229, 265
+  offset: 0, 0
+  index: -1
+Rocket1
+  rotate: false
+  xy: 2022, 116
+  size: 437, 339
+  orig: 437, 339
+  offset: 0, 0
+  index: -1
+Rocket2
+  rotate: false
+  xy: 2, 650
+  size: 504, 584
+  orig: 504, 584
+  offset: 0, 0
+  index: -1
+RudyArm_Bottom
+  rotate: false
+  xy: 3443, 22
+  size: 154, 166
+  orig: 154, 166
+  offset: 0, 0
+  index: -1
+RudyArm_Top
+  rotate: false
+  xy: 1844, 36
+  size: 176, 186
+  orig: 176, 186
+  offset: 0, 0
+  index: -1
+RudyBody
+  rotate: false
+  xy: 2180, 1256
+  size: 278, 418
+  orig: 278, 418
+  offset: 0, 0
+  index: -1
+RudyEar
+  rotate: false
+  xy: 3120, 1720
+  size: 294, 468
+  orig: 294, 468
+  offset: 0, 0
+  index: -1
+RudyEye
+  rotate: false
+  xy: 3083, 20
+  size: 118, 168
+  orig: 118, 168
+  offset: 0, 0
+  index: -1
+RudyEye2
+  rotate: false
+  xy: 3203, 20
+  size: 118, 168
+  orig: 118, 168
+  offset: 0, 0
+  index: -1
+RudyEye3
+  rotate: false
+  xy: 3323, 20
+  size: 118, 168
+  orig: 118, 168
+  offset: 0, 0
+  index: -1
+RudyEye4
+  rotate: false
+  xy: 2, 28
+  size: 116, 50
+  orig: 116, 50
+  offset: 0, 0
+  index: -1
+RudyEyeEffect
+  rotate: false
+  xy: 3599, 34
+  size: 170, 164
+  orig: 170, 164
+  offset: 0, 0
+  index: -1
+RudyFace
+  rotate: false
+  xy: 1734, 1256
+  size: 444, 418
+  orig: 444, 418
+  offset: 0, 0
+  index: -1
+RudyHand
+  rotate: false
+  xy: 2920, 11
+  size: 161, 177
+  orig: 161, 177
+  offset: 0, 0
+  index: -1
+RudyMouth
+  rotate: false
+  xy: 278, 40
+  size: 192, 38
+  orig: 192, 38
+  offset: 0, 0
+  index: -1
+RudyMouth2
+  rotate: false
+  xy: 3799, 868
+  size: 123, 144
+  orig: 123, 144
+  offset: 0, 0
+  index: -1
+Sky
+  rotate: false
+  xy: 3317, 742
+  size: 480, 270
+  orig: 480, 270
+  offset: 0, 0
+  index: -1
+Smoke2_1
+  rotate: false
+  xy: 1508, 224
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Smoke2_2
+  rotate: false
+  xy: 1775, 742
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Smoke2_3
+  rotate: false
+  xy: 2289, 742
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Smoke2_4
+  rotate: false
+  xy: 2606, 1676
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Smoke2_5
+  rotate: false
+  xy: 2803, 760
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Smoke_1
+  rotate: false
+  xy: 3416, 1896
+  size: 500, 292
+  orig: 500, 292
+  offset: 0, 0
+  index: -1
+Smoke_3
+  rotate: false
+  xy: 3416, 1602
+  size: 500, 292
+  orig: 500, 292
+  offset: 0, 0
+  index: -1
+Smoke_5
+  rotate: false
+  xy: 3406, 1308
+  size: 500, 292
+  orig: 500, 292
+  offset: 0, 0
+  index: -1
+Smoke_7
+  rotate: false
+  xy: 3383, 1014
+  size: 500, 292
+  orig: 500, 292
+  offset: 0, 0
+  index: -1
+Star
+  rotate: false
+  xy: 3799, 746
+  size: 117, 120
+  orig: 117, 120
+  offset: 0, 0
+  index: -1
+UIClickEffect
+  rotate: false
+  xy: 3204, 1305
+  size: 177, 177
+  orig: 177, 177
+  offset: 0, 0
+  index: -1
+UIHand
+  rotate: false
+  xy: 2461, 157
+  size: 457, 298
+  orig: 457, 298
+  offset: 0, 0
+  index: -1
+X
+  rotate: false
+  xy: 2862, 1334
+  size: 340, 340
+  orig: 340, 340
+  offset: 0, 0
+  index: -1

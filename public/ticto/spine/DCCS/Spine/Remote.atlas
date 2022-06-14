@@ -1,0 +1,41 @@
+
+Remote.png
+size: 773,590
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Remote
+  rotate: false
+  xy: 2, 249
+  size: 418, 339
+  orig: 418, 339
+  offset: 0, 0
+  index: -1
+Star_01
+  rotate: false
+  xy: 2, 2
+  size: 255, 245
+  orig: 255, 245
+  offset: 0, 0
+  index: -1
+Star_02
+  rotate: false
+  xy: 422, 343
+  size: 255, 245
+  orig: 255, 245
+  offset: 0, 0
+  index: -1
+Triangle_01
+  rotate: false
+  xy: 259, 2
+  size: 255, 245
+  orig: 255, 245
+  offset: 0, 0
+  index: -1
+Triangle_02
+  rotate: false
+  xy: 516, 96
+  size: 255, 245
+  orig: 255, 245
+  offset: 0, 0
+  index: -1

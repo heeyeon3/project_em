@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>고객지원 - eMotiV</title>
+<!-- 공통 링크 시작 -->
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/contents.css">
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/jquery.scrollbar.js"></script>
+<script type="text/javascript" src="./js/pbCommon.js"></script>
+<!-- //공통 링크 끝 -->
+</head>
+<body>
+<form method="post" action="" id="form1">
+<!-- wrap 시작 -->
+<div id="wrap">
+    <!-- header 시작 -->
+    <div id="header">
+		<!-- include 해야할 영역 시작 -->
+        <div class="header_inner mob_menu">
+            <div class="header_tit">
+                <h1>고객지원</h1><!--여기에 해당 페이지 제목이 들어가야 함-->
+                <a href="/login" class="btn_login">로그인</a>				
+                <div class="profile_sel">
+                    <button type="button" class="btn_profile_sel" id="btnProfileSel"><img src="./images/user_set.png" alt="" class=""><span class="hide">프로필선택</span></button>
+                    <ul class="profile_menu">
+                        <li class="user_login"><a><strong style="color: #5079f3;"></strong> 님</a></li>
+						<li><button type="button" id="btnProfile1">프로필1</button></li>
+						<li><button type="button" id="btnProfile2">프로필2</button></li>
+						<li><a href="/profile_modify">프로필 관리</a></li>
+						<li><a href="#" onclick="alert('서비스 준비중입니다.')">구독관리</a></li>
+						<li><a href="/mypage_phone">회원정보 수정</a></li>
+						<li><button type="button" id="btnLogout" onclick="logout()">로그아웃</button></li>
+					</ul>
+                </div>
+                <button type="button" class="btn_menu_open">메뉴 열기</button>				
+            </div>
+            <nav class="menu_wrap">				
+                <div class="lnb_tit">
+                    <strong class="menu_logo">전체메뉴</strong>
+                    <button type="button" class="btn_menu_close">메뉴 닫기</button>
+                </div>
+                <div class="user_info">
+                    <div class="user_logout"><span>로그인을 해주세요.</span><a href="/login" class="btn_login">로그인</a></div>
+                    <div class="user_login"><strong>hhhtnwls</strong>님 안녕하세요.</div>
+                </div>
+                <div class="sel_language">
+					<button type="button" class="on">한국어</button>
+					<button type="button" class="off">English</button>
+				</div>
+                <ul class="nav_menu">
+                    <li class="home"><a href="/">홈</a></li>
+					<li><a href="/company_info">회사소개</a></li>
+					<li class="sub_on"><a href="#none" id="menuhead">서비스</a>
+						<ul class="nav_menu_sub" id="menulist">
+							<li><a href="/service_star">스타러커스</a></li>
+							<li><a href="/service_adhd">스타러커스 for ADHD</a></li>
+							<li><a href="/service_land">스타러커스 째깍섬 탈출</a></li>
+							<li><a href="/digitalchart_info">디지털 차트</a></li>
+						</ul>					
+					</li>
+					<li><a href="/faq" class="active">고객지원</a></li>
+					<li><a class="btn_nav_menu" onclick="buyselalret()">구독하기</a></li>
+                </ul>
+                <div class="menu_logout"><button type="button" id="btnLogoutMenu">로그아웃</button></div>					
+            </nav>
+        </div>
+        <!-- //include 해야할 영역 끝 -->	
+	</div>
+    <!-- header 끝 -->
+    
+    <!-- container 시작 -->
+    <div id="container" style="padding-top: 90px;">
+		<!-- content 시작 -->
+        <div id="content">
+
+			<div class="faq_wrap">
+				<h2 class="mob">고객지원</h2>
+				<ul class="faq_category">
+					<li class="active"><a href="#none">서비스</a></li>
+					<li><a href="#none">구매 / 결제</a></li>
+					<li><a href="#none">오류 해결</a></li>
+					<li><a href="#none">이용 관련</a></li>
+				</ul>
+				<ul class="faq_list">
+					<li>
+						<strong class="faq_question"><span>질문</span>이모티브의 디지털 치료제의 서비스는 언제부터 이용 가능한가요?</strong>
+						<p class="faq_answer"><span>답변</span>1월 중순에 구글 플레이스토어를 통해 서비스를 런칭할 예정입니다. 1월 중순에 구글 플레이스토어를 통해 서비스를 런칭할 예정입니다. 1월 중순에 구글 플레이스토어를 통해 서비스를 런칭할 예정입니다.</p>
+					</li>
+					<li>
+						<strong class="faq_question"><span>질문</span>이모티브의 디지털 치료제의 서비스는 언제부터 이용 가능한가요? 이모티브의 디지털 치료제의 서비스는 언제부터 이용 가능한가요?</strong>
+						<p class="faq_answer"><span>답변</span>1월 중순에 구글 플레이스토어를 통해 서비스를 런칭할 예정입니다. 1월 중순에 구글 플레이스토어를 통해 서비스를 런칭할 예정입니다. 1월 중순에 구글 플레이스토어를 통해 서비스를 런칭할 예정입니다.</p>
+					</li>	
+				</ul>
+				<div class="faq_more">
+					<strong>더 궁금한 점이 있으신가요?</strong>
+					<p>더 궁금하신 사항은 <a href="https://bedecked-iron-43d.notion.site/6c3ca75c136c4445b9a41b6c187bfaa7" target="_blank">이모티브 가이드북</a>에서 확인하세요</p>
+				</div>
+			</div>
+			
+        </div>
+        <!-- //content 끝 -->
+    </div>
+    <!-- //container 끝 -->
+	<!-- footer 시작-->
+    <footer id="footer">
+        <div class="footer_inner">
+            <h2>(주)이모티브</h2>
+            <div class="footer_addr">대표자 : 민정상 / 사업자등록번호 : 894-87-01889 <span class="mob_inline">주소 : 서울특별시 강남구 테헤란로 92길 11, 3층 / 전화번호 : 02-508-2813</span></div>
+            <div class="footer_menu">
+                <button type="button" id="" onclick="privacypolicy()">개인정보처리방침</button>
+                <button type="button" id="" onclick="terms()">이용약관</button>
+                <a href="/faq">FAQ</a>
+            </div>
+            <div class="footer_sns">
+                <a href="https://www.youtube.com/channel/UCJ_cbzB1VjIyUgbF6JsYK_Q" target="_blank" class="youtube">youtube</a>
+                <a href="https://blog.naver.com/emotiv_" target="_blank" class="blog">blog</a>
+                <a href="https://www.instagram.com/starrukus_official/?hl=ko" target="_blank" class="instagram">instagram</a>
+            </div>
+            <p class="footer_copy">Copyright emotive CO., LTD. ALL RIGHTS RESERVED.</p>
+        </div>		
+    </footer>
+    <!-- //footer 끝-->
+</div>
+<!-- //wrap 끝 -->
+	
+<!-- page script 시작 -->
+<script type="text/javascript">			
+$(document).ready(function(){
+
+	//faq 카테고리 클릭
+	$(document).on('click', '.faq_category li a', function() {		
+		$('.faq_category li').removeClass('active');
+		$(this).parent().addClass('active');	
+	});	
+
+});		
+</script>
+<!-- //page script 끝 -->	
+</form>
+</body>
+</html>

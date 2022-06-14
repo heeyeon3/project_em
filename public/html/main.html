@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>eMotiV</title>
+<!-- 공통 링크 시작 -->
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/contents.css">
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.scrollbar.js"></script>
+<script type="text/javascript" src="../js/pbCommon.js"></script>
+
+<!-- //공통 링크 끝 -->
+<!-- 스크롤 이벤트 테스트 -->
+<style>
+	.scroll-container {
+		align-items: center;
+		box-sizing: border-box;
+	}
+	
+	.scroll-element,
+	.scroll-caption {
+	  width: 50%;
+	}
+	
+	.scroll-element {
+	  min-height: 300px;
+	  height: 100%;
+	  background-color: #eaeaea;
+	}
+	
+	.scroll-caption {
+	  margin: 1rem;
+	}
+	
+	@media screen and (max-width: 650px) {
+	  .scroll-container,
+	  .scroll-container:nth-of-type(even) {
+		flex-direction: column;
+		align-content: inherit;
+	  }
+	
+	  .scroll-element {
+		height: 100%;
+	  }
+	
+	  .scroll-element,
+	  .scroll-caption {
+		width: 100%;
+	  }
+	}
+	
+	.js-scroll {
+	  opacity: 0;
+	  transition: opacity 500ms;
+	}
+	
+	.js-scroll.scrolled {
+	  opacity: 1;
+	}
+	
+	.scrolled.fade-in-bottom {
+	  animation: fade-in-bottom 0.7s ease-in-out both;
+	}
+	
+	@keyframes fade-in-bottom {
+	  0% {
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+		opacity: 0;
+	  }
+	  100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	  }
+	}
+	
+	/* 동영상 스크롤 이후 헤더 변경 */
+	.header_white {
+		background-color: white !important;
+	}
+	
+	.header_white h1{
+		background: url('../images/img_logo.png') no-repeat 0 0 !important;
+	}
+	
+	.header_white .nav_menu li a{
+		color: #101010 !important;
+	}
+	
+	.header_white .nav_menu .btn_nav_menu{
+		color: #fff !important;
+	}
+	
+	.header_white .btn_login{
+		color: #101010 !important;
+	}	
+	
+	.header_white .sel_language button.on{
+		color: #101010 !important;
+		background: url('../images/ico_language.png') no-repeat 0 0 !important;
+	}
+
+	.header_white .btn_profile_sel{
+		background: url('../images/btn_arrow_down.png') no-repeat 35px center !important;
+	}
+
+	@media screen and (max-width: 768px){
+		.header_white {
+		background-color: white !important;
+		}
+		
+		.header_white h1{
+			background: url('../images/img_logo.png') no-repeat 0 0 !important;
+		}
+		
+		.header_white .nav_menu li a{
+			color: #101010 !important;
+		}
+		
+		.header_white .nav_menu .btn_nav_menu{
+			color: #fff !important;
+		}
+		
+		.header_white .btn_login{
+			color: #fff !important;
+		}	
+		
+		.header_white .sel_language button.on{
+			color: #101010 !important;
+			background: url('../images/ico_language.png') no-repeat 0 0 !important;
+		}
+
+		.header_white .btn_profile_sel{
+			background: url('../images/btn_arrow_down.png') no-repeat 35px center !important;
+		}
+
+		.btn_menu_open {
+			background-image: url('../images/btn_menu_open2_mob.png') !important;
+		}
+
+		.header_white .btn_menu_open {
+			background-image: url('../images/btn_menu_open_mob.png') !important;
+		}
+	}
+	</style>
+</head>
+<!-- 2022.01.26일 추가 body에 class 추가 해주세요. -->
+<body class="main">
+<form method="post" action="" id="form1">
+<!-- wrap 시작 -->
+<div id="wrap">
+    <!-- header 시작 -->
+    <div id="header" style="position: fixed; width: 100%;">
+		<!-- include 해야할 영역 시작 -->
+        <div class="header_inner">
+			<div class="header_tit">			 
+				<h1>eMotiV</h1>
+				<a href="/login" class="btn_login">로그인</a>				
+				<div class="profile_sel">
+					<button type="button" class="btn_profile_sel" id="btnProfileSel">
+						<img src="./images/user_set02.png" alt="" id="user_set" class="">
+						<span class="hide">프로필메뉴</span></button>
+					<ul class="profile_menu">
+                        <li class="user_login"><a><strong style="color: #5079f3;"></strong> 님</a></li>
+						<li><button type="button" id="btnProfile1">프로필1</button></li>
+						<li><button type="button" id="btnProfile2">프로필2</button></li>
+						<li><a href="/profile_modify">프로필 관리</a></li>
+						<!-- <li><a href="#" onclick="alert('서비스 준비중입니다.')">구독관리</a></li> -->
+						<li><a href="#" onclick="alert('서비스 준비중입니다.')">구독관리</a></li>
+						<li><a href="/mypage_phone">회원정보 수정</a></li>
+						<li><button type="button" id="btnLogout" onclick="logout()">로그아웃</button></li>
+					</ul>
+				</div>
+				<button type="button" class="btn_menu_open">메뉴 열기</button>				
+			</div>
+			<nav class="menu_wrap">				
+				<div class="lnb_tit">
+					<strong class="menu_logo">전체메뉴</strong>
+					<button type="button" class="btn_menu_close">메뉴 닫기</button>
+				</div>
+				<div class="user_info">
+					<div class="user_logout"><span>로그인을 해주세요.</span><a href="/login" class="btn_login">로그인</a></div>
+					<div class="user_login"><strong>hhhtnwls</strong>님 안녕하세요.</div>
+				</div>
+				<div class="sel_language">
+					<button type="button" class="on">한국어</button>
+					<button type="button" class="off">English</button>
+				</div>
+				<ul class="nav_menu">
+					<li class="home"><a href="/">홈</a></li>
+					<li><a href="/company_info">회사소개</a></li>
+					<li class="sub_on"><a href="#none" id="menuhead">서비스</a>
+						<ul class="nav_menu_sub" id="menulist">
+							<li><a href="/service_star">스타러커스</a></li>
+							<li><a href="/service_adhd">스타러커스 for ADHD</a></li>
+							<li><a href="/service_land">스타러커스 째깍섬 탈출</a></li>
+							<li><a href="/digitalchart_info">디지털 차트</a></li>
+						</ul>					
+					</li>
+					<li><a href="/faq">고객지원</a></li>
+					<li><a class="btn_nav_menu" onclick="buyselalret()">구독하기</a></li>
+				</ul>
+				<div class="menu_logout"><button type="button" id="btnLogoutMenu">로그아웃</button></div>					
+			</nav>
+		</div>
+		<!-- //include 해야할 영역 끝 -->
+	</div>
+    <!-- header 끝 -->
+	<!-- 중간 bg 영역 시작 -->
+    <div class="bg_video">
+        <video src="./images/video_main.mp4" autoplay playsinline="" loop="loop" muted="muted"></video>		
+    </div>
+    <!-- //중간 bg 영역 끝 -->    
+    <!-- container 시작 -->
+    <div id="container">
+		<!-- content 시작 -->
+        <div id="content">
+			<h2 class="hide">메인</h2>
+
+            
+			<section class="main_cont01 scroll-container">
+				<div class="js-scroll fade-in-bottom">
+					<h3>디지털 치료제의 시작<br>세상 어디에도 없을 경험</h3>
+					<div class="main_cont_btn">
+						<div class="text">
+							<strong>지금 스타러커스를 체험해보세요!</strong>
+							<p>Android 10.0이상, iOS 11.0 이상 </p>
+						</div>
+						<div class="btn_wrap">
+							<a href="#none" class="btn_google">google play에서 설치하기</a>
+							<a href="#none" class="btn_app">App Store에서 설치하기</a>
+						</div>	
+					</div>
+				</div>
+			</section>
+			
+			<div class="main_cont02">
+				<div class="main_cont02_inner">
+					<div class="main_cont0201 js-scroll fade-in-bottom">
+						<strong>집중력, 기억력 등의 다양한 인지 능력들은<br>우리가 일상을 꾸려 나가는 데 중요한 역할을 합니다.</strong>
+					</div>
+					<div class="main_cont0202 js-scroll fade-in-bottom">
+					<strong>때로는 인지 활동 과정에 어려움이 생겨<br><span class="mob_inline">ADHD, 자폐 스펙트럼 장애, 우울증, 치매 등</span> 정신질환이 발생하기도 합니다.</strong>
+						<ul class="main_list01 js-scroll fade-in-bottom">
+							<li>ADHD</li>
+							<li>치매</li>
+							<li>우울증</li>
+							<li>자폐 스펙트럼 장애</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<section class="main_cont03">
+				<h3 class="js-scroll fade-in-bottom"><span>언제</span><br><span>어디서든</span><br>부작용 걱정 없이<br><span>누구나</span> 사용할 수 있는<br><span>디지털 치료제</span>를<br>개발합니다.</h3>
+				<ul class="main_list02">
+					<li class="js-scroll fade-in-bottom">
+						<strong>ADHD 선별 (확률적 예측)</strong>
+						<p>병원에 가기 전, 몇 가지 게임을 통해<br>이용자의 인지 상태를 분석하고<br>확률적으로 ADHD를 선별할 수 있습니다.</p>
+					</li>
+					<li class="js-scroll fade-in-bottom">
+						<strong>인지능력 강화를 통한 치료</strong>
+						<p><span class="mob_block">기존 치료 대비 더 적은 시간과 합리적인 비용</span>으로 보호자의 걱정과 부담을 확 줄였습니다.</p>
+					</li>
+					<li class="js-scroll fade-in-bottom">
+						<strong>디지털 차트를 통한 모니터링</strong>
+						<p>우리 아이의 인지 능력을 점검해보고<br>나날이 성장하는 과정을 모니터링 해보세요!</p>
+					</li>
+				</ul>
+				<div class="main_cont03_text js-scroll fade-in-bottom"><span class="mob_block">일상의 즐거움이</span> 회복될 수 있도록<br><span class="mob_block">이모티브가</span> 당신과 함께합니다.</div>
+			</section>
+
+			<section class="main_partner">
+				<div class="js-scroll fade-in-bottom">
+					<h3>파트너사</h3>
+					<p>다양한 글로벌 기업이 이모티브와 함께 합니다.</p>
+				</div>
+				<ul class="partner_list js-scroll fade-in-bottom">
+					<li class="partner01">서울대학교병원</li>
+					<li class="partner02">인제대학교부신백병원</li>
+					<li class="partner03">현대</li>
+					<li class="partner04">교보생명</li>
+					<li class="partner05">째깍악어</li>
+					<li class="partner06">원주세브란스기독병원</li>
+					<li class="partner07">Vietnam Silicon Valley</li>
+					<li class="partner08">김해의생명산업진흥원</li>
+					<li class="partner09">KILSA</li>
+					<li class="partner10">HEALTH</li>
+				</ul>
+			</section>
+
+			<div class="main_cont04">
+				<div class="main_cont_btn">
+					<div class="text">
+						<strong>지금 스타러커스를 체험해보세요!</strong>
+						<p>Android 10.0이상, iOS 11.0 이상 </p>
+					</div>
+					<div class="btn_wrap">
+						<a href="#none" class="btn_google">google play에서 설치하기</a>
+						<a href="#none" class="btn_app">App Store에서 설치하기</a>
+					</div>					
+				</div>
+			</div>
+
+        </div>
+        <!-- //content 끝 -->
+    </div>
+    <!-- //container 끝 -->
+	<!-- footer 시작-->
+    <footer id="footer">
+        <div class="footer_inner">
+            <h2>(주)이모티브</h2>
+            <div class="footer_addr">대표자 : 민정상 / 사업자등록번호 : 894-87-01889 <span class="mob_inline">주소 : 서울특별시 강남구 테헤란로 92길 11, 3층 / 전화번호 : 02-508-2813</span></div>
+            <div class="footer_menu">
+                <button type="button" id="" onclick="privacypolicy()">개인정보처리방침</button>
+                <button type="button" id="" onclick="terms()">이용약관</button>
+                <a href="/faq">FAQ</a>
+            </div>
+            <div class="footer_sns">
+                <a href="https://www.youtube.com/channel/UCJ_cbzB1VjIyUgbF6JsYK_Q" target="_blank" class="youtube">youtube</a>
+                <a href="https://blog.naver.com/emotiv_" target="_blank" class="blog">blog</a>
+                <a href="https://www.instagram.com/starrukus_official/?hl=ko" target="_blank" class="instagram">instagram</a>
+            </div>
+            <p class="footer_copy">Copyright emotive CO., LTD. ALL RIGHTS RESERVED.</p>
+        </div>		
+    </footer>
+    <!-- <!— //footer 끝—> -->
+</div>
+<!-- <!— //wrap 끝 —> -->
+	
+<!-- <!— page script 시작 —> -->
+<script src="../javascripts/main.js"></script>
+<!-- <!— //page script 끝 —>	 -->
+</form>
+</body>
+</html>

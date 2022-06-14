@@ -1,0 +1,48 @@
+
+MemoryBagEffect.png
+size: 1538,881
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+MemoryBag_Cover
+  rotate: false
+  xy: 2, 2
+  size: 1332, 877
+  orig: 1332, 877
+  offset: 0, 0
+  index: -1
+MemoryBag_Line
+  rotate: false
+  xy: 1336, 653
+  size: 181, 226
+  orig: 181, 226
+  offset: 0, 0
+  index: -1
+MemoryBag_Line2
+  rotate: false
+  xy: 1336, 121
+  size: 125, 34
+  orig: 125, 34
+  offset: 0, 0
+  index: -1
+O
+  rotate: false
+  xy: 1336, 451
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Star
+  rotate: false
+  xy: 1336, 157
+  size: 117, 120
+  orig: 117, 120
+  offset: 0, 0
+  index: -1
+X
+  rotate: false
+  xy: 1336, 279
+  size: 170, 170
+  orig: 170, 170
+  offset: 0, 0
+  index: -1

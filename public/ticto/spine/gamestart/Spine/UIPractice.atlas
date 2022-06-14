@@ -1,0 +1,13 @@
+
+UIPractice.png
+size: 39,49
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PracticeIcon
+  rotate: false
+  xy: 2, 2
+  size: 35, 45
+  orig: 35, 45
+  offset: 0, 0
+  index: -1

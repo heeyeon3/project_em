@@ -1,0 +1,20 @@
+
+UITouchBar_2.png
+size: 1032,182
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+UITouchBar_2
+  rotate: false
+  xy: 2, 92
+  size: 1028, 88
+  orig: 1028, 88
+  offset: 0, 0
+  index: -1
+UITouchBar_3
+  rotate: false
+  xy: 2, 2
+  size: 1028, 88
+  orig: 1028, 88
+  offset: 0, 0
+  index: -1

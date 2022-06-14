@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>교육 - eMotiV</title>
+<!-- 공통 링크 시작 -->
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/contents.css">
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/jquery.scrollbar.js"></script>
+<script type="text/javascript" src="./js/pbCommon.js"></script>
+<!-- //공통 링크 끝 -->
+</head>
+<body>
+<form method="post" action="" id="form1">
+<!-- wrap 시작 -->
+<div id="wrap">
+    <!-- header 시작 -->
+    <div id="header">
+        <div class="header_inner mob_menu">
+            <div class="header_tit">			 
+                <h1>교육</h1>
+                <a href="/login" class="btn_login">로그인</a>				
+                <div class="profile_sel">
+                    <button type="button" class="btn_profile_sel" id="btnProfileSel"><img src="./images/user_set.png" alt="" class=""><span class="hide">프로필선택</span></button>
+                    <div class="profile_menu">
+                        <button type="button" id="btnProfile">프로필 변경</button>
+				        <button type="button" id="btnLogout">로그아웃</button>
+                    </div>
+                </div>
+                <button type="button" class="btn_menu_open">메뉴 열기</button>				
+            </div>
+            <nav class="menu_wrap">				
+                <div class="lnb_tit">
+                    <strong class="menu_logo">전체메뉴</strong>
+                    <button type="button" class="btn_menu_close">메뉴 닫기</button>
+                </div>
+                <div class="user_info">
+                    <div class="user_logout"><span>로그인을 해주세요.</span><a href="/login" class="btn_login">로그인</a></div>
+                    <div class="user_login"><strong>hhhtnwls</strong>님 안녕하세요.</div>
+                </div>
+                <ul class="nav_menu">
+                    <li class="menu_home"><a href="/">홈</a></li>
+                    <li class="menu_company"><a href="/company_info">회사소개</a></li>
+                    <li class="menu_star"><a href="/service_star">Star Ruckus</a></li>
+                    <li class="menu_edu"><a href="edu_info.html" class="active">교육</a></li>                    
+                    <li class="menu_chart"><a href="/digitalchart_info">디지털차트</a></li>
+                    <li class="menu_my"><a href="mypage_info.html">마이페이지</a></li>
+                </ul>
+                <div class="menu_logout"><button type="button" id="btnLogoutMenu">로그아웃</button></div>					
+            </nav>
+        </div>
+	</div>
+    <!-- header 끝 -->
+    
+    <!-- container 시작 -->
+    <div id="container">
+		<!-- content 시작 -->
+        <div id="content">
+
+            <div class="star_wrap">
+                <h2 class="mob">교육</h2>                
+                <div class="star_conts">
+                    <strong class="copy_head img_edu">인지  평가와 성향분석을 통한<br>개인 맞춤형 적성 찾기 서비스</strong>
+                    <p class="copy_sub small">간단한 평가게임을 통해 아동들의<br>인지상태와 성인들의 성향을 분석해드려요..</p>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_default_round small" id="">인지평가</button>
+                    </div>
+                    <span class="ico_scroll">Scroll</span>
+                </div>
+                <section class="star_conts">
+                    <h3>인지평가</h3>
+                    <strong class="copy_head">다양한 게임으로 재미있게 인지능력을 측정해보세요</strong>
+                    <p class="copy_sub">게임을 하며 측정된 행동 데이터를 바탕으로 아이들의 4가지 인지요소를 측정해요. 재미있는 게임 형식으로 아무도 평가 하고 있는지 모를거에요. </p>
+                    <div class="img_wrap02"><img src="./images/img_game0301.png" alt=""></div>
+                </section>             
+            </div>
+
+            <div class="star_wrap_bg">
+                <section class="star_conts">
+                    <h3>디지털차트</h3>
+                    <strong class="copy_head">인지 상태를 상세하게 분석해드려요</strong>
+                    <p class="copy_sub">게임이 끝난 후, 현재 상태가 어떤지 그래프로 볼 수 있어요.</p>
+                    <div class="img_wrap03"><img src="./images/img_coming.png" alt="coming soon 2022"></div>               
+                </section>
+            </div>
+
+            <section class="star_conts">
+                <h3>성향분석</h3>
+                <strong class="copy_head">게임 속 상황을 통해 자연스럽게 성향을 알 수 있어요</strong>
+                <p class="copy_sub">스토리가 있는 게임에서의 의사결정을 통해 BIG5를 활용해 보육교사의 성향을 분석해드려요.</p>
+                <div class="img_wrap03"><img src="./images/img_coming.png" alt="coming soon 2022"></div>               
+            </section>
+			
+        </div>
+        <!-- //content 끝 -->
+    </div>
+    <!-- //container 끝 -->
+	<!-- footer 시작-->
+    <footer id="footer">
+        <div class="footer_inner">
+            <h2>(주)이모티브</h2>
+            <div class="footer_addr">대표자 : 민정상 / 사업자등록번호 : 894-87-01889 <span class="mob_inline">주소 : 서울특별시 강남구 테헤란로 92길 11, 3층 / 전화번호 : 02-508-2813</span></div>
+            <div class="footer_menu">
+                <button type="button" id="" onclick="privacypolicy()">개인정보처리방침</button>
+                <button type="button" id="" onclick="terms()">이용약관</button>
+                <a href="/faq">FAQ</a>
+            </div>
+            <div class="footer_sns">
+                <a href="https://www.youtube.com/channel/UCJ_cbzB1VjIyUgbF6JsYK_Q" target="_blank" class="youtube">youtube</a>
+                <a href="https://blog.naver.com/emotiv_" target="_blank" class="blog">blog</a>
+                <a href="https://www.instagram.com/starrukus_official/?hl=ko" target="_blank" class="instagram">instagram</a>
+            </div>
+            <p class="footer_copy">Copyright emotive CO., LTD. ALL RIGHTS RESERVED.</p>
+        </div>		
+    </footer>
+    <!-- //footer 끝-->
+</div>
+<!-- //wrap 끝 -->
+
+
+
+
+
+	
+<!-- page script 시작 -->
+<script type="text/javascript">			
+$(document).ready(function(){	
+
+});		
+</script>
+<!-- //page script 끝 -->	
+</form>
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+
+Notice.png
+size: 982,390
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10
+  rotate: false
+  xy: 205, 29
+  size: 84, 58
+  orig: 84, 58
+  offset: 0, 0
+  index: -1
+Dot
+  rotate: false
+  xy: 291, 38
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: -1
+Eye
+  rotate: false
+  xy: 2, 17
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+Face
+  rotate: false
+  xy: 476, 123
+  size: 311, 265
+  orig: 311, 265
+  offset: 0, 0
+  index: -1
+Graph1
+  rotate: false
+  xy: 656, 25
+  size: 62, 96
+  orig: 62, 96
+  offset: 0, 0
+  index: -1
+Handphone
+  rotate: false
+  xy: 2, 46
+  size: 201, 342
+  orig: 201, 342
+  offset: 0, 0
+  index: -1
+Line
+  rotate: false
+  xy: 2, 11
+  size: 58, 4
+  orig: 58, 4
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: false
+  xy: 31, 24
+  size: 82, 20
+  orig: 82, 20
+  offset: 0, 0
+  index: -1
+Pencil
+  rotate: false
+  xy: 789, 244
+  size: 142, 144
+  orig: 142, 144
+  offset: 0, 0
+  index: -1
+Sound1
+  rotate: false
+  xy: 789, 61
+  size: 121, 181
+  orig: 121, 181
+  offset: 0, 0
+  index: -1
+Sound2
+  rotate: false
+  xy: 597, 7
+  size: 57, 114
+  orig: 57, 114
+  offset: 0, 0
+  index: -1
+Sound3
+  rotate: false
+  xy: 912, 74
+  size: 68, 168
+  orig: 68, 168
+  offset: 0, 0
+  index: -1
+Timer_01
+  rotate: false
+  xy: 205, 89
+  size: 269, 299
+  orig: 269, 299
+  offset: 0, 0
+  index: -1
+Timer_02
+  rotate: false
+  xy: 476, 2
+  size: 119, 119
+  orig: 119, 119
+  offset: 0, 0
+  index: -1

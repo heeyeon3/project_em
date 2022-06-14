@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* ---------------------------------------
+	Description : 공통요소
+	Author	: netive 홍길동	
+	date	: 2013.01.25
+	modify	: 2013.01.25 05:50 PM
+   --------------------------------------- */  
+   
+*	{ padding:0; margin:0;}
+body	{ padding:0; margin:0; color:#444; background:#FFFFFF; font-size:12px; line-height:normal; font-family:'돋움',Dotum,'굴림',Gulim,Verdana,'Trebuchet MS',Tahoma,Arial,'Sans-Serif'; word-wrap:break-word; word-break:break-all; -webkit-text-size-adjust:none;}
+div, h1, h2, h3, h4, h5, h6, p, pre, blockquote, abbr, acronym, address, code, del, dfn, th, td, map, iframe	{ margin:0; padding:0;}
+dl, dt, dd, ul, ol, li	{ list-style:none; margin:0; padding:0;}
+
+#htmlList a	{  text-decoration:none; cursor:pointer; cursor:hand;}
+#htmlList a:link, #htmlList a:visited	{  color:#666; text-decoration:none;}
+#htmlList a:hover, #htmlList a:active	{  color:#666; text-decoration:underline; }
+
+form, fieldset, legend, input, textarea, select	{ margin:0; padding:0; vertical-align:middle;}
+fieldset, legend	{ border:0;}
+input, textarea, select	{ color:#444; font-size:11px; font-family:'돋움',Dotum,'굴림',Gulim,Verdana,'Trebuchet MS',Tahoma,Arial,'Sans-Serif';}
+table	{ table-layout:fixed; border-spacing:0; *border-collapse:collapse;}
+th	{ text-align:left;}
+h4, h5, h6	{ font-size:12px;}
+em, address		{ font-weight:normal; font-style:normal;}
+legend, caption, hr	{ display:none;}
+label	{ cursor:pointer; cursor:hand; display:inline-block;}
+area	{ cursor:pointer; cursor:hand;}
+img		{ vertical-align:top; border:0; font-size:0; *line-height:1;}
+*:first-child+html th	{ text-align:left; letter-spacing:-0.05em;}
+*:first-child+html input.radio	{ margin-right:-2px;}
+*:first-child+html label	{ margin:1px;}
+
+
+/* 본문스타일 */
+.guideWrap {padding:20px;}
+.guideWrap h1{ font-size:28px; text-align:center; color:#222;  padding-bottom:15px; font-family:Malgun,"맑은 고딕",Verdana,Arial;}
+
+.guideWrap span.ico { display:inline-block; background:#d2d2d2; font-size:11px; font-family:Verdana,Arial,"Sans-serif"; border-radius:4px; color:#FFF; min-width:30px; height:14px;*height:13px; padding:2px 5px 0 5px; *padding:3px 7px 0 7px; margin:0 3px 0 0; letter-spacing:-0.05em; line-height:11px; text-align:center;}
+.guideWrap .ico.ing	{ background:#5d9b1a;}
+.guideWrap .ico.done { background:#1f78bd;}
+.guideWrap .ico.edit	{ background:#ff2d2d;}
+.guideWrap .ico.finish { background:#4e4e4e;}
+
+.guideWrap .siteInfo { border-bottom:1px solid #dcdcdc; padding:20px 10px 10px 0;}
+.guideWrap .siteInfo li {position:relative; padding:0 0 10px 8px;}
+.guideWrap .siteInfo li  em{ font-size:11px; color:#666;}
+
+.guideWrap .siteInfo .total { color:#333; font-weight:bold;}
+.guideWrap .siteInfo .ico {font-size:14px; height:20px; line-height:15px; padding:2px 8px 0 8px; border-radius:0px; vertical-align:middle; }
+.guideWrap .siteInfo .none {color:#333}
+.guideWrap .siteInfo .rate {color:#000 !important; height:18px; background-color:#f0f0f0; border:1px solid #ccc; font-weight:bold;}
+.guideWrap .siteInfo .rate { font-weight:normal;}
+.guideWrap .siteInfo strong{ display:inline-block; margin:0 5px 0 35px; height:20px; line-height:22px; vertical-align:middle;}
+.guideWrap .siteInfo li strong:first-child{ margin-left:10px;}
+
+.h1Info { background-color:#646464; color:#fff; font-size:11px; padding:10px 0 7px 0; text-align:center; }
+.notice{ border:1px solid #dcdcdc; overflow:hidden; padding:0; }
+.notice h2 { font-size:12px; padding-bottom:10px;}
+.notice section {width:55%; float:right; padding:20px 0 10px 30px; border-left:1px solid #dcdcdc;}
+.notice section:first-child { width:38%; border-left:none;float:left;}
+.notice li{ position:relative; padding:0 0 7px 8px; font-size:11px; line-height:14px; }
+.notice li strong {color:#1a5599;}
+.notice li a { color:#444;}
+.notice .bul{position:absolute; top:5px; left:0; width:2px; height:2px; background:#626262;}
+
+/* table-outer */
+.tblList	{ width:100%; table-layout:fixed; margin-bottom:40px;border-bottom:1px solid #ccc;}
+.tblList th	{ color:#FFF; text-align:center; font-weight:bold;}
+.tblList th:first-child, .tblList td:first-child	{ border-left:0;}
+.tblList thead th	{ border-top:1px solid #464646; border-bottom:1px solid #464646; padding:11px 0 7px 0; border-left:1px solid #464646; background:#646464; line-height:120%; }
+.tblList tr.title th	{ background:#d0dbeb; padding:10px 0 8px 12px; border-bottom:1px dashed #c1c7d0; color:#546786; text-align:left; cursor:pointer}
+.tblList td	{ padding:9px 5px 5px 5px; border-top:1px dashed #ccc;border-left:1px solid #ccc;line-height:16px;}
+.tblList tbody tr:first-child td {border-top:none;}
+.tblList td a { color:#444;  text-decoration:none;}
+.tblList td a:hover	{ color:#2080eb; text-decoration:underline;}
+.tblList tr:hover td {background-color:#fcfcdc;}
+
+.tblList td.no { font-weight:bold; text-align:center;}
+.tblList td.finishD, .tblList td.editD {text-align:center;}
+
+
+.tblList td.link {font-weight:bold;letter-spacing:0px; padding-left:10px;}
+.tblList td.memo {color:#008000;}
+.tblList td.editMemo {font-size:11px; color:#a30000;}
+.tblList td.editMemo ul, .tblList td.editMemo ul li { margin-top:5px;}
+.tblList td.pageType { text-align:center; }
+.tblList td.workD { font-weight:bold; color:#f00; }
+
+
+#tabCont1 h2, #tabCont2 h2, #tabCont3 h2 { font-size:17px; padding:20px 10px 10px 0;}
+
+.tblList .depth1Tr td { background-color:#e3ebf2; border-top:2px solid #666;}
+.tblList .depth1Tr td:nth-child(2) { font-weight:bold;}
+
+.tblList .delCont td { background-color:#f0f0f0 !important; color:#999 !important;}
+.tblList .delCont td a { color:#999;}
+.tblList .delCont td.memo { color:#f00 !important;}
+
+.tblList .linkCont td { background-color:#f0f0f0 !important; color:#999 !important;}
+.tblList .linkCont td a { color:#999;}
+
+.tblList .newCont td { background-color:#ffe9e9;}
+
+.tblList .layerCont td { background-color:#ffe9e9;}
+
+.tblList .guideCont {}
+
+
+
+#toTop{display:none; position:fixed; bottom:0; width:100%;}
+#toTop a{display:block; padding:9px 10px; background:#333; color:#FFF; text-align:center;}

@@ -1,0 +1,230 @@
+
+MemoryTutorial.png
+size: 3938,1708
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Cloud
+  rotate: false
+  xy: 2, 274
+  size: 668, 422
+  orig: 668, 422
+  offset: 0, 0
+  index: -1
+CrockArm
+  rotate: false
+  xy: 3303, 30
+  size: 334, 220
+  orig: 334, 220
+  offset: 0, 0
+  index: -1
+CrockBody
+  rotate: false
+  xy: 1336, 217
+  size: 1060, 952
+  orig: 1060, 952
+  offset: 0, 0
+  index: -1
+CrockEye1
+  rotate: false
+  xy: 1282, 389
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+CrockEye3
+  rotate: false
+  xy: 1269, 217
+  size: 60, 40
+  orig: 60, 40
+  offset: 0, 0
+  index: -1
+CrockLeg
+  rotate: false
+  xy: 561, 5
+  size: 74, 88
+  orig: 74, 88
+  offset: 0, 0
+  index: -1
+CrockMouth
+  rotate: false
+  xy: 1269, 71
+  size: 418, 144
+  orig: 418, 144
+  offset: 0, 0
+  index: -1
+Hill
+  rotate: false
+  xy: 1336, 1171
+  size: 1920, 535
+  orig: 1920, 535
+  offset: 0, 0
+  index: -1
+MemoryBag
+  rotate: false
+  xy: 2, 698
+  size: 1332, 1008
+  orig: 1332, 1008
+  offset: 0, 0
+  index: -1
+MemoryCrockArm
+  rotate: false
+  xy: 3258, 1142
+  size: 669, 564
+  orig: 669, 564
+  offset: 0, 0
+  index: -1
+MemoryNote
+  rotate: false
+  xy: 2398, 423
+  size: 1206, 717
+  orig: 1206, 717
+  offset: 0, 0
+  index: -1
+Rocket
+  rotate: false
+  xy: 672, 56
+  size: 432, 640
+  orig: 432, 640
+  offset: 0, 0
+  index: -1
+RudyArm_Bottom
+  rotate: false
+  xy: 1106, 259
+  size: 174, 178
+  orig: 174, 178
+  offset: 0, 0
+  index: -1
+RudyArm_Top
+  rotate: false
+  xy: 1106, 439
+  size: 176, 186
+  orig: 176, 186
+  offset: 0, 0
+  index: -1
+RudyBody
+  rotate: false
+  xy: 3606, 252
+  size: 278, 418
+  orig: 278, 418
+  offset: 0, 0
+  index: -1
+RudyEar
+  rotate: false
+  xy: 3606, 672
+  size: 294, 468
+  orig: 294, 468
+  offset: 0, 0
+  index: -1
+RudyEye
+  rotate: false
+  xy: 3639, 58
+  size: 116, 50
+  orig: 116, 50
+  offset: 0, 0
+  index: -1
+RudyEye2
+  rotate: false
+  xy: 3639, 110
+  size: 98, 140
+  orig: 98, 140
+  offset: 0, 0
+  index: -1
+RudyFace
+  rotate: false
+  xy: 2398, 3
+  size: 444, 418
+  orig: 444, 418
+  offset: 0, 0
+  index: -1
+RudyFoot
+  rotate: false
+  xy: 1282, 365
+  size: 44, 22
+  orig: 44, 22
+  offset: 0, 0
+  index: -1
+RudyHand
+  rotate: false
+  xy: 1106, 80
+  size: 161, 177
+  orig: 161, 177
+  offset: 0, 0
+  index: -1
+RudyLegBottom
+  rotate: false
+  xy: 1282, 315
+  size: 34, 48
+  orig: 34, 48
+  offset: 0, 0
+  index: -1
+RudyLegTop
+  rotate: false
+  xy: 484, 2
+  size: 75, 91
+  orig: 75, 91
+  offset: 0, 0
+  index: -1
+RudyMouth
+  rotate: false
+  xy: 1106, 46
+  size: 160, 32
+  orig: 160, 32
+  offset: 0, 0
+  index: -1
+RudyMouth2
+  rotate: false
+  xy: 3303, 325
+  size: 82, 96
+  orig: 82, 96
+  offset: 0, 0
+  index: -1
+RudyTail
+  rotate: false
+  xy: 3862, 169
+  size: 74, 81
+  orig: 74, 81
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 1106, 627
+  size: 208, 69
+  orig: 208, 69
+  offset: 0, 0
+  index: -1
+Sky
+  rotate: false
+  xy: 2, 2
+  size: 480, 270
+  orig: 480, 270
+  offset: 0, 0
+  index: -1
+Star
+  rotate: false
+  xy: 3757, 7
+  size: 117, 120
+  orig: 117, 120
+  offset: 0, 0
+  index: -1
+TwinkleEffect
+  rotate: false
+  xy: 3739, 129
+  size: 121, 121
+  orig: 121, 121
+  offset: 0, 0
+  index: -1
+UIClickEffect
+  rotate: false
+  xy: 484, 95
+  size: 177, 177
+  orig: 177, 177
+  offset: 0, 0
+  index: -1
+UIHand
+  rotate: false
+  xy: 2844, 123
+  size: 457, 298
+  orig: 457, 298
+  offset: 0, 0
+  index: -1

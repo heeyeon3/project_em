@@ -1,0 +1,27 @@
+
+OXEffect.png
+size: 495,204
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+O
+  rotate: false
+  xy: 2, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Star
+  rotate: false
+  xy: 376, 82
+  size: 117, 120
+  orig: 117, 120
+  offset: 0, 0
+  index: -1
+X
+  rotate: false
+  xy: 204, 32
+  size: 170, 170
+  orig: 170, 170
+  offset: 0, 0
+  index: -1

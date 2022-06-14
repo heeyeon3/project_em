@@ -1,0 +1,188 @@
+
+WISCCrock.png
+size: 1953,1102
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Balloon
+  rotate: false
+  xy: 1064, 690
+  size: 582, 410
+  orig: 582, 410
+  offset: 0, 0
+  index: -1
+CrockArm
+  rotate: false
+  xy: 1064, 48
+  size: 334, 220
+  orig: 334, 220
+  offset: 0, 0
+  index: -1
+CrockBody
+  rotate: false
+  xy: 2, 148
+  size: 1060, 952
+  orig: 1060, 952
+  offset: 0, 0
+  index: -1
+CrockEye1
+  rotate: false
+  xy: 1834, 190
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+CrockEye2
+  rotate: false
+  xy: 716, 62
+  size: 94, 84
+  orig: 94, 84
+  offset: 0, 0
+  index: -1
+CrockEye3
+  rotate: false
+  xy: 716, 20
+  size: 60, 40
+  orig: 60, 40
+  offset: 0, 0
+  index: -1
+CrockLeg
+  rotate: false
+  xy: 973, 58
+  size: 74, 88
+  orig: 74, 88
+  offset: 0, 0
+  index: -1
+CrockMouth
+  rotate: false
+  xy: 2, 2
+  size: 418, 144
+  orig: 418, 144
+  offset: 0, 0
+  index: -1
+RudyArm_Bottom
+  rotate: false
+  xy: 1678, 44
+  size: 154, 166
+  orig: 154, 166
+  offset: 0, 0
+  index: -1
+RudyArm_Top
+  rotate: false
+  xy: 1500, 24
+  size: 176, 186
+  orig: 176, 186
+  offset: 0, 0
+  index: -1
+RudyBody
+  rotate: false
+  xy: 1510, 212
+  size: 278, 418
+  orig: 278, 418
+  offset: 0, 0
+  index: -1
+RudyEar
+  rotate: false
+  xy: 1648, 632
+  size: 294, 468
+  orig: 294, 468
+  offset: 0, 0
+  index: -1
+RudyEye
+  rotate: false
+  xy: 422, 6
+  size: 98, 140
+  orig: 98, 140
+  offset: 0, 0
+  index: -1
+RudyEye3
+  rotate: false
+  xy: 1400, 128
+  size: 98, 140
+  orig: 98, 140
+  offset: 0, 0
+  index: -1
+RudyEye4
+  rotate: false
+  xy: 1510, 638
+  size: 116, 50
+  orig: 116, 50
+  offset: 0, 0
+  index: -1
+RudyFace
+  rotate: false
+  xy: 1064, 270
+  size: 444, 418
+  orig: 444, 418
+  offset: 0, 0
+  index: -1
+RudyFoot
+  rotate: false
+  xy: 1884, 216
+  size: 44, 22
+  orig: 44, 22
+  offset: 0, 0
+  index: -1
+RudyHand
+  rotate: false
+  xy: 1790, 453
+  size: 161, 177
+  orig: 161, 177
+  offset: 0, 0
+  index: -1
+RudyHand2
+  rotate: false
+  xy: 1790, 274
+  size: 161, 177
+  orig: 161, 177
+  offset: 0, 0
+  index: -1
+RudyLegBottom
+  rotate: false
+  xy: 1834, 140
+  size: 34, 48
+  orig: 34, 48
+  offset: 0, 0
+  index: -1
+RudyLegTop
+  rotate: false
+  xy: 896, 55
+  size: 75, 91
+  orig: 75, 91
+  offset: 0, 0
+  index: -1
+RudyMouth
+  rotate: false
+  xy: 1790, 240
+  size: 160, 32
+  orig: 160, 32
+  offset: 0, 0
+  index: -1
+RudyMouth2
+  rotate: false
+  xy: 812, 50
+  size: 82, 96
+  orig: 82, 96
+  offset: 0, 0
+  index: -1
+RudyTail
+  rotate: false
+  xy: 1400, 45
+  size: 74, 81
+  orig: 74, 81
+  offset: 0, 0
+  index: -1
+Star
+  rotate: false
+  xy: 522, 26
+  size: 117, 120
+  orig: 117, 120
+  offset: 0, 0
+  index: -1
+Sweat
+  rotate: false
+  xy: 641, 15
+  size: 73, 131
+  orig: 73, 131
+  offset: 0, 0
+  index: -1

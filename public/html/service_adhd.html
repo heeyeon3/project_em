@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>	스타러커스 for ADHD - eMotiV</title>
+<!-- 공통 링크 시작 -->
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/contents.css">
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/jquery.scrollbar.js"></script>
+<script type="text/javascript" src="./js/pbCommon.js"></script>
+<!-- //공통 링크 끝 -->
+</head>
+<body class="fullbg">
+<form method="post" action="" id="form1">
+<!-- wrap 시작 -->
+<div id="wrap">
+    <!-- header 시작 -->
+    <div id="header">
+        <!-- include 해야할 영역 시작 -->
+        <div class="header_inner mob_menu">
+            <div class="header_tit">
+                <h1>서비스</h1>
+                <a href="/login" class="btn_login">로그인</a>				
+                <div class="profile_sel">
+                    <button type="button" class="btn_profile_sel" id="btnProfileSel"><img src="./images/user_set.png" alt="" class=""><span class="hide">프로필선택</span></button>
+                    <ul class="profile_menu">
+                        <li class="user_login"><a><strong style="color: #5079f3;"></strong> 님</a></li>
+						<li><button type="button" id="btnProfile1">프로필1</button></li>
+						<li><button type="button" id="btnProfile2">프로필2</button></li>
+						<li><a href="/profile_modify">프로필 관리</a></li>
+						<li><a href="#" onclick="alert('서비스 준비중입니다.')">구독관리</a></li>
+						<li><a href="/mypage_phone">회원정보 수정</a></li>
+						<li><button type="button" id="btnLogout" onclick="logout()">로그아웃</button></li>
+					</ul>
+                </div>
+                <button type="button" class="btn_menu_open">메뉴 열기</button>				
+            </div>
+            <nav class="menu_wrap">				
+                <div class="lnb_tit">
+                    <strong class="menu_logo">전체메뉴</strong>
+                    <button type="button" class="btn_menu_close">메뉴 닫기</button>
+                </div>
+                <div class="user_info">
+                    <div class="user_logout"><span>로그인을 해주세요.</span><a href="/login" class="btn_login">로그인</a></div>
+                    <div class="user_login"><strong>hhhtnwls</strong>님 안녕하세요.</div>
+                </div>
+                <div class="sel_language">
+					<button type="button" class="on">한국어</button>
+					<button type="button" class="off">English</button>
+				</div>
+                <ul class="nav_menu">
+                    <li class="home"><a href="/">홈</a></li>
+					<li><a href="/company_info">회사소개</a></li>
+					<li class="sub_on"><a href="#none" id="menuhead" class="active">서비스</a>
+						<ul class="nav_menu_sub" id="menulist">
+							<li><a href="/service_star">스타러커스</a></li>
+							<li><a href="/service_adhd" class="active">스타러커스 for ADHD</a></li>
+							<li><a href="/service_land">스타러커스 째깍섬 탈출</a></li>
+							<li><a href="/digitalchart_info">디지털 차트</a></li>
+						</ul>					
+					</li>
+					<li><a href="/faq">고객지원</a></li>
+					<li><a class="btn_nav_menu" onclick="buyselalret()">구독하기</a></li>
+                </ul>
+                <div class="menu_logout"><button type="button" id="btnLogoutMenu">로그아웃</button></div>					
+            </nav>
+        </div>
+        <!-- //include 해야할 영역 끝 -->
+	</div>
+    <!-- header 끝 -->
+    <!-- 중간 bg 이미지 영역 시작 -->
+    <div class="bg_service02">
+        <div class="bg_top_inner">
+            <div class="bg_copy">아동 ADHD 및 잠재 가능성을<br>평가하고 진단하는 솔루션<br>스타러커스 for ADHD</div>
+            <div class="btn_wrap">
+                    <a href="none" class="btn_default_round small">출시예정</a> 
+            </div>
+        </div>        
+    </div>
+    <!-- //중간 bg 이미지 영역 끝 -->
+    <!-- container 시작 -->
+    <div id="container">
+		<!-- content 시작 -->
+        <div id="content">
+            
+            <h2 class="hide">스타러커스 for ADHD</h2>
+
+            <section class="service_cont_wrap adhd">
+                <h3>ADHD 진단</h3>
+                <p class="sub_copy">디지털 융합 기술로<br>ADHD의 가능성을 확인해요</p>                 
+                <p class="summary"><span class="mob_inline">ADHD가 의심이 되었지만, 진료와 약물 복용에 대한 부담 때문에 선뜻</span>검사하지 못했던 부모님들을 위해 개발되었어요.</p>
+                <div class="video single"><video src="./images/video_service0201.mp4" controls playsinline="" preload="metadata" poster="./images/img_video_service0201.png"></video></div>                
+            </section>
+            
+            <div class="service_adhd_cont">
+                <div class="box">몇 가지 게임을 즐기는 동안<br>아이의 인지상태를 닮은<br><strong>디지털 아바타</strong>가 만들어져요.</div>
+                <div class="box">아바타가 아이를 대신해 ADHD<br>검사 Task를 진행하고 아이는<br>집에서 간단히 <strong>게임을 즐기면</strong> 돼요.</div>
+            </div>
+
+            <div class="service_bg_wrap">
+                <div class="service_cont_wrap noti">
+                    <p class="sub_copy">이런 아이들이 사용해요</p>
+                    <p class="summary"><strong>만 6세 ~ 만 12세</strong><br>집중력을 향상 시켜야 하는 아이<br>약간의 산만함을 보이는 아이</p>
+                </div>
+            </div>
+            <div class="bg_next02" id="nextservice" style="cursor: pointer;">
+                <div class="bg_next_inner">
+                    <a href="/service_land">
+                        <strong>Next Service</strong>
+                        <span>쉽고, 재밌는 유아용 인지 평가<br>스타러커스 째깍섬 탈출</span>
+                    </a>            
+                </div>    
+            </div>
+			
+        </div>
+        <!-- //content 끝 -->        
+    </div>
+    <!-- //container 끝 -->    
+	<!-- footer 시작-->
+    <footer id="footer">
+        <div class="footer_inner">
+            <h2>(주)이모티브</h2>
+            <div class="footer_addr">대표자 : 민정상 / 사업자등록번호 : 894-87-01889 <span class="mob_inline">주소 : 서울특별시 강남구 테헤란로 92길 11, 3층 / 전화번호 : 02-508-2813</span></div>
+            <div class="footer_menu">
+                <button type="button" id="" onclick="privacypolicy()">개인정보처리방침</button>
+                <button type="button" id="" onclick="terms()">이용약관</button>
+                <a href="/faq">FAQ</a>
+            </div>
+            <div class="footer_sns">
+                <a href="https://www.youtube.com/channel/UCJ_cbzB1VjIyUgbF6JsYK_Q" target="_blank" class="youtube">youtube</a>
+                <a href="https://blog.naver.com/emotiv_" target="_blank" class="blog">blog</a>
+                <a href="https://www.instagram.com/starrukus_official/?hl=ko" target="_blank" class="instagram">instagram</a>
+            </div>
+            <p class="footer_copy">Copyright emotive CO., LTD. ALL RIGHTS RESERVED.</p>
+        </div>		
+    </footer>
+    <!-- //footer 끝-->
+</div>
+<!-- //wrap 끝 -->
+	
+<!-- page script 시작 -->
+<script type="text/javascript">			
+$(document).ready(function(){	
+
+    //하단의 스크립트는 UI확인을 위해 임의로 작성된 것입니다. 개발자께서 작업하셔서 사용하시면 됩니다.
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+	
+	if(isMobile) {
+		//MOBILE
+        $(window).scroll(function() {
+            if ($(document).scrollTop() == 0) {
+                $('#header').css({'backgroundColor': 'transparent'});
+            }else {            
+                $('#header').css({'backgroundColor': '#fff'});
+            }
+        });
+	}
+});		
+
+
+$('#nextservice').click(function(){
+    window.location.href = "/service_land"
+})
+</script>
+<!-- //page script 끝 -->	
+<script src="../javascripts/service_adhd.js"></script>
+</form>
+</body>
+</html>
+

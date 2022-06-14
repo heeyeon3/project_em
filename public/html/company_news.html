@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>언론 속의 이모티브 - eMotiV</title>
+<!-- 공통 링크 시작 -->
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/contents.css">
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/jquery.scrollbar.js"></script>
+<script type="text/javascript" src="./js/pbCommon.js"></script>
+<!-- //공통 링크 끝 -->
+</head>
+<body>
+<form method="post" action="" id="form1">
+<!-- wrap 시작 -->
+<div id="wrap">
+    <!-- header 시작 -->
+    <div id="header">
+		<div class="header_inner new_window">
+			<div class="header_tit ">			 
+				<h1>eMotiV</h1>
+				<button type="button" class="btn_pop_close">페이지 닫기</button>					
+			</div>
+			<div class="sel_language">
+				<button type="button" class="on">한국어</button>
+				<button type="button" class="off">English</button>
+			</div>
+		</div>	
+	</div>
+    <!-- header 끝 -->
+    
+    <!-- container 시작 -->
+    <div id="container">
+		<!-- content 시작 -->
+        <div id="content">
+
+			<div class="news_wrap">
+				<h2>언론 속의 이모티브</h2>			
+				<ul class="news_list">
+					<li>
+						<a href="#none">
+							<div class="news_img"><img src="./images/@news_sum01.png" alt="" class=""></div>
+							<div class="news_conts">
+								<span class="date">2021.09.10</span>
+								<strong class="tit">이모티브, ITS 2021서 아동 ADHD 위한 디지털 치료제 ‘Star Ruckus’ 소개 나선다</strong>								
+							</div>						
+						</a>					
+					</li>
+					<li>
+						<a href="#none">
+							<div class="news_img"><img src="./images/@news_sum02.png" alt="" class=""></div>
+							<div class="news_conts">
+								<span class="date">2021.09.10</span>
+								<strong class="tit">이모티브, ITS 2021서 아동 ADHD 위한 디지털 치료제 ‘Star Ruckus’ 소개 나선다 이모티브, ITS 2021서 아동 ADHD 위한 디지털 치료제 ‘Star Ruckus’ 소개 나선다</strong>								
+							</div>						
+						</a>				
+					</li>
+					<li>
+						<a href="#none">
+							<div class="news_img"><img src="./images/@news_sum03.png" alt="" class=""></div>
+							<div class="news_conts">
+								<span class="date">2021.09.10</span>
+								<strong class="tit">민정상 이모티브 대표<br>게임 치료제 개발하는 인지공학자</strong>								
+							</div>						
+						</a>				
+					</li>
+					<li>
+						<a href="#none">
+							<div class="news_img"><img src="./images/@news_sum03.png" alt="" class=""></div>
+							<div class="news_conts">
+								<span class="date">2021.09.10</span>
+								<strong class="tit">민정상 이모티브 대표<br>게임 치료제 개발하는 인지공학자</strong>								
+							</div>						
+						</a>				
+					</li>
+				</ul>
+				<div class="btn_wrap">
+					<button type="button" class="btn_line">더보기</button>	
+				</div>
+			</div>
+
+        </div>
+        <!-- //content 끝 -->
+    </div>
+    <!-- //container 끝 -->
+	<!-- footer 시작-->
+	<footer id="footer">
+		<div class="footer_inner">
+			<h2>(주)이모티브</h2>
+			<div class="footer_addr">대표자 : 민정상 / 사업자등록번호 : 894-87-01889 <span class="mob_inline">주소 : 서울특별시 강남구 테헤란로 92길 11, 3층 / 전화번호 : 02-508-2813</span></div>
+			<div class="footer_menu">
+				<button type="button" id="" onclick="privacypolicy()">개인정보처리방침</button>
+				<button type="button" id="" onclick="terms()">이용약관</button>
+				<a href="/faq">FAQ</a>
+			</div>
+			<div class="footer_sns">
+				<a href="https://www.youtube.com/channel/UCJ_cbzB1VjIyUgbF6JsYK_Q" target="_blank" class="youtube">youtube</a>
+				<a href="https://blog.naver.com/emotiv_" target="_blank" class="blog">blog</a>
+				<a href="https://www.instagram.com/starrukus_official/?hl=ko" target="_blank" class="instagram">instagram</a>
+			</div>
+			<p class="footer_copy">Copyright emotive CO., LTD. ALL RIGHTS RESERVED.</p>
+		</div>		
+	</footer>
+	<!-- //footer 끝-->	
+</div>
+<!-- //wrap 끝 -->
+	
+<!-- page script 시작 -->
+<script type="text/javascript">			
+$(document).ready(function(){	
+	$('#footer').removeClass('fixed');	
+});		
+</script>
+<!-- //page script 끝 -->	
+</form>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+Start.png
+size: 1457,710
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GreenLight
+  rotate: false
+  xy: 1311, 283
+  size: 125, 125
+  orig: 125, 125
+  offset: 0, 0
+  index: -1
+LightEffect
+  rotate: false
+  xy: 832, 5
+  size: 149, 149
+  orig: 149, 149
+  offset: 0, 0
+  index: -1
+RedLight
+  rotate: false
+  xy: 1311, 156
+  size: 125, 125
+  orig: 125, 125
+  offset: 0, 0
+  index: -1
+StartBtn
+  rotate: false
+  xy: 2, 2
+  size: 413, 320
+  orig: 413, 320
+  offset: 0, 0
+  index: -1
+StartBtn2
+  rotate: false
+  xy: 417, 2
+  size: 413, 320
+  orig: 413, 320
+  offset: 0, 0
+  index: -1
+StartBtnBox_1
+  rotate: false
+  xy: 500, 392
+  size: 496, 316
+  orig: 496, 316
+  offset: 0, 0
+  index: -1
+StartBtnBox_2
+  rotate: false
+  xy: 2, 324
+  size: 496, 384
+  orig: 496, 384
+  offset: 0, 0
+  index: -1
+TrafficLight
+  rotate: false
+  xy: 832, 193
+  size: 477, 197
+  orig: 477, 197
+  offset: 0, 0
+  index: -1
+UIClickEffect
+  rotate: false
+  xy: 983, 14
+  size: 177, 177
+  orig: 177, 177
+  offset: 0, 0
+  index: -1
+UIHand
+  rotate: false
+  xy: 998, 410
+  size: 457, 298
+  orig: 457, 298
+  offset: 0, 0
+  index: -1
+YellowLight
+  rotate: false
+  xy: 1162, 66
+  size: 125, 125
+  orig: 125, 125
+  offset: 0, 0
+  index: -1

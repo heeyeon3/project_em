@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>디지털 차트(강화) - eMotiV</title>
+<!-- 공통 링크 시작 -->
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/contents.css">
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/jquery.scrollbar.js"></script>
+<script type="text/javascript" src="./js/pbCommon.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+<!-- //공통 링크 끝 -->
+</head>
+<body>
+<form method="post" action="" id="form1">
+<!-- wrap 시작 -->
+<div id="wrap">
+    <!-- header 시작 -->
+    <div id="header">
+        <!-- include 해야할 영역 시작 -->
+        <div class="header_inner mob_menu">
+            <div class="header_tit">
+                <h1>디지털 차트</h1>
+                <a href="/login" class="btn_login">로그인</a>				
+                <div class="profile_sel">
+                    <button type="button" class="btn_profile_sel" id="btnProfileSel"><img src="./images/user_set.png" alt="" class=""><span class="hide">프로필선택</span></button>
+                    <ul class="profile_menu">
+                        <li class="user_login"><a><strong style="color: #5079f3;"></strong> 님</a></li>
+						<li><button type="button" id="btnProfile1">프로필1</button></li>
+						<li><button type="button" id="btnProfile2">프로필2</button></li>
+						<li><a href="/profile_modify">프로필 관리</a></li>
+						<li><a href="#" onclick="alert('서비스 준비중입니다.')">구독관리</a></li>
+						<li><a href="/mypage_phone">회원정보 수정</a></li>
+						<li><button type="button" id="btnLogout" onclick="logout()">로그아웃</button></li>
+					</ul>
+                </div>
+                <button type="button" class="btn_menu_open">메뉴 열기</button>				
+            </div>
+            <nav class="menu_wrap">				
+                <div class="lnb_tit">
+                    <strong class="menu_logo">전체메뉴</strong>
+                    <button type="button" class="btn_menu_close">메뉴 닫기</button>
+                </div>
+                <div class="user_info">
+                    <div class="user_logout"><span>로그인을 해주세요.</span><a href="/login" class="btn_login">로그인</a></div>
+                    <div class="user_login"><strong>hhhtnwls</strong>님 안녕하세요.</div>
+                </div>
+                <div class="sel_language">
+					<button type="button" class="on">한국어</button>
+					<button type="button" class="off">English</button>
+				</div>
+                <ul class="nav_menu">
+                    <li class="home"><a href="/">홈</a></li>
+					<li><a href="/company_info">회사소개</a></li>
+					<li class="sub_on"><a href="#none" id="menuhead">서비스</a>
+						<ul class="nav_menu_sub" id="menulist">
+							<li><a href="/service_star">스타러커스</a></li>
+							<li><a href="/service_adhd">스타러커스 for ADHD</a></li>
+							<li><a href="/service_land">스타러커스 째깍섬 탈출</a></li>
+							<li><a href="/digitalchart_info" class="active">디지털 차트</a></li>
+						</ul>					
+					</li>
+					<li><a href="/faq">고객지원</a></li>
+					<li><a class="btn_nav_menu" onclick="buyselalret()">구독하기</a></li>
+                </ul>
+                <div class="menu_logout"><button type="button" id="btnLogoutMenu">로그아웃</button></div>					
+            </nav>
+        </div>
+        <!-- //include 해야할 영역 끝 -->
+	</div>
+    <!-- header 끝 -->
+    
+    <!-- container 시작 -->
+    <div id="container" style="padding-top: 90px;">
+		<!-- content 시작 -->
+        <div id="content">
+
+            <div class="digital_wrap">
+                <h2 class="mob">디지털 차트</h2>
+                <!-- 서브메뉴 시작 -->
+                <ul class="sub_menu">
+                    <li><a href="/digitalchart_info">평가</a></li>
+                    <li class="active"><a href="/digitalchart_info2">강화</a></li>
+                </ul>	
+                <!-- // 서브메뉴 끝 -->
+                <div class="digital_user">
+                    <div class="user"><span class="mob_block">이루디의 강화 결과</span> 리포트입니다.</div>
+                    <select>
+                        <option>2021년12월1주차</option>
+                        <option>2021년12월2주차</option>
+                        <option>2021년12월3주차</option>
+                    </select>
+                </div>
+
+                <section class="digital_conts">
+                    <h3>게임 시간 리포트</h3>
+                    <div class="digital_game_wrap">
+                        <strong class="digital_chart_tit">주간 통합 게임 시간</strong>
+                        <div class="chart_bar">
+                            <strong class="text large">초과</strong>
+                            <!--strong class="text small">부족</strong>
+                            <strong class="text mid">적당</strong-->
+                            <div class="bar_wrap">
+                                <strong class="bar"><span>70</span></strong>
+                                <span class="min">0</span>
+                                <span class="max">210분</span>
+                            </div>
+                        </div>
+                        <div class="chart_summary">게임 시간이 적당해요. 시간 조절을 잘 하고 있어요.</div>
+                    </div>
+                    <div class="digital_chart_wrap">
+                        <strong class="digital_chart_tit">요일별 게임 시간</strong>
+                        <!-- basic 값은 적당한 기준 값이라 변동이 없어도 될꺼 같고요. over값이 있는 경우만 over 삽입해주시면 됩니다.-->
+                        <div class="chart_time">
+                            <div class="chart_time_inner">
+                                <div class="bar"><span class="day">일</span><span class="basic">30</span></div>
+                                <div class="bar"><span class="day">월</span><span class="basic">30</span></div>
+                                <div class="bar"><span class="day">화</span><span class="basic">30</span></div>
+                                <div class="bar"><span class="day">수</span><span class="basic">30</span><strong class="over">20</strong></div>
+                                <div class="bar"><span class="day">목</span><span class="basic">30</span></div>
+                                <div class="bar"><span class="day">금</span><span class="basic">30</span><strong class="over">10</strong></div>
+                                <div class="bar"><span class="day">토</span><span class="basic">30</span></div>
+                            </div>
+                            <div class="legend">
+                                <span class="legend01">권장시간</span>
+                                <span class="legend02">적당</span>
+                                <span class="legend03">초과</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="digital_conts">
+                    <h3>강화 결과 리포트</h3>
+                    <div class="digital_chart_wrap">
+                        <strong class="digital_chart_tit">캐롯 러너</strong>
+                        <div class="chart_line">
+                            <!-- 여기에 차트 들어감-->
+                            <canvas id="myChart01"></canvas>
+                        </div>
+                        <div class="chart_summary">잘하고 있어요. 지금처럼 꾸준히 할 수 있도록 지도해주세요.</div>
+                        <div class="btn_wrap">
+                            <button type="button" class="btn_round" id="" onclick="openLayerPopup('popExplain02')">캐롯 러너가 어떻게 인지를 강화시키나요?</button>
+                        </div>                        
+                    </div>
+                    <div class="digital_chart_wrap">
+                        <strong class="digital_chart_tit">컬러 슈터</strong>
+                        <div class="chart_line">
+                            <!-- 여기에 차트 들어감-->
+                            <canvas id="myChart02"></canvas>
+                        </div>
+                        <div class="chart_summary">게임을 더 꾸준히 할 수 있도록 지도해주세요.</div>
+                        <div class="btn_wrap">
+                            <button type="button" class="btn_round" id="" onclick="openLayerPopup('popExplain03')">컬러 슈터가  어떻게 인지를 강화시키나요?</button>
+                        </div>                        
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+        <!-- //content 끝 -->
+    </div>
+    <!-- //container 끝 -->
+	<!-- footer 시작-->
+    <footer id="footer">
+        <div class="footer_inner">
+            <h2>(주)이모티브</h2>
+            <div class="footer_addr">대표자 : 민정상 / 사업자등록번호 : 894-87-01889 <span class="mob_inline">주소 : 서울특별시 강남구 테헤란로 92길 11, 3층 / 전화번호 : 02-508-2813</span></div>
+            <div class="footer_menu">
+                <button type="button" id="" onclick="privacypolicy()">개인정보처리방침</button>
+                <button type="button" id="" onclick="terms()">이용약관</button>
+                <a href="/faq">FAQ</a>
+            </div>
+            <div class="footer_sns">
+                <a href="https://www.youtube.com/channel/UCJ_cbzB1VjIyUgbF6JsYK_Q" target="_blank" class="youtube">youtube</a>
+                <a href="https://blog.naver.com/emotiv_" target="_blank" class="blog">blog</a>
+                <a href="https://www.instagram.com/starrukus_official/?hl=ko" target="_blank" class="instagram">instagram</a>
+            </div>
+            <p class="footer_copy">Copyright emotive CO., LTD. ALL RIGHTS RESERVED.</p>
+        </div>		
+    </footer>
+    <!-- //footer 끝-->
+</div>
+<!-- //wrap 끝 -->
+
+<!-- 주행 훈련 설명 팝업 시작 -->
+<div class="pop_Wrap" id="popExplain02">
+	<section class="pop_full explain">
+        <h2 class="line2">캐롯 러너가 어떻게<br>인지를 강화시키나요?</h2>	
+        <button type="button" class="btn_pop_close" data-hide-id="popExplain02" >창닫기</button>			
+		<div class="pop_conts">
+            <div class="conts_explain scrollbar-dynamic">
+                <div class="explain_top"><strong>기억력과 억제력 강화</strong>에 도움이 됩니다.</div>
+                <div class="explain">
+                    <strong class="tit">표적탐지</strong>
+                    <p class="summary type01">세 종류의 당근이 제시되지만 표적은 주황색 당근 뿐입니다. 표적인 주황색 당근이 제시될 때 사용자는 최대한 빠르게 화면을 터치하는 반응을 해야 합니다. 하지만 비표적인 노랑색과 파랑색 당근이 제시된다면 반응을 억제할 수 있어야 합니다.</p>
+                </div>
+                <div class="explain">
+                    <strong class="tit">다중과제 수행</strong>
+                    <p class="summary type02">다중과제 수행에서 사용자는 표적과 비표적을 구분하여 표적에만 반응하는 동시에 장애물에 부딪히지 않아야 합니다. 이렇듯 서로 다른 두 가지 과제를 동시에 수행하면서 사용자는 스스로 인지 기능을 통제하고 조절하는 훈련을 하게 됩니다. 이 과정에서 인지적 집행기능인 주의력과 기억력이 상승하는 효과가 나타나게 됩니다.</p>
+                </div>                
+            </div>
+        </div>		
+	</section>
+</div>
+<!-- //주행 훈련 설명 팝업 끝 -->
+
+<!-- 공격 훈련 설명 팝업 시작 -->
+<div class="pop_Wrap" id="popExplain03">
+	<section class="pop_full explain">
+        <h2 class="line2">컬러 슈터가 어떻게<br>인지를 강화시키나요?</h2>	
+        <button type="button" class="btn_pop_close" data-hide-id="popExplain03" >창닫기</button>			
+		<div class="pop_conts">
+            <div class="conts_explain scrollbar-dynamic">
+                <div class="explain_top"><strong>기억력과 억제력 강화</strong>에 도움이 됩니다.</div>
+                <div class="explain">
+                    <strong class="tit">표적탐지</strong>
+                    <p class="summary type03">사용자는 노랑색과 파랑색 두 종류의 표적에 맞추어 버튼을 눌러야 합니다. 표적은 버튼과 일치하는 방향에 제시될 수도 있고, 표적과 버튼의 방향이 불일치할 수도 있습니다. 불일치 조건일 때 사용자는 같은 방향의 버튼을 잘못 누르려는 반응을 억제해야 과제를 성공적으로 수행할 수 있습니다.</p>
+                </div>
+                <div class="explain">
+                    <strong class="tit">다중과제 수행</strong>
+                    <p class="summary type04">다중과제 수행에서 사용자는 표적과 대응하는 버튼의 방향이 다를 때, 같은 방향의 버튼을 누르려는 반응을 성공적으로 억제함과 동시에 화면을 스와이프하면서 총알을 피하는 과제를 수행해야 합니다. </p>
+                </div> 
+            </div>
+        </div>		
+	</section>
+</div>
+<!-- //공격 훈련 설명 팝업 끝 -->
+
+
+	
+<!-- page script 시작 -->
+<script type="text/javascript">			
+$(document).ready(function(){	
+
+    //하단의 스크립트는 UI확인을 위해 임의로 작성된 것입니다. 개발자께서 작업하셔서 사용하시면 됩니다.
+    
+    barWidthSet();
+    function barWidthSet(){
+        var barValue = $('.chart_bar .bar_wrap .bar').text() + "%";
+        $('.chart_bar .bar_wrap .bar').css({'width': barValue});
+    }
+
+    timeBarWidthSet();
+    function timeBarWidthSet(){
+         $('.chart_time_inner .bar .over').each(function(){
+			var timeBarValue = $(this).text();
+            $(this).css({'height': timeBarValue});
+		});
+    }
+
+});	
+
+
+var context01 = document.getElementById('myChart01').getContext('2d');
+var myChart01 = new Chart(context01, {
+    type: 'line', // 차트의 형태
+    data: { // 차트에 들어갈 데이터
+        labels: ["일", "월", "화", "수", "목", "금", "토" ],
+        datasets: [
+            { //데이터
+                label: '', //차트 제목
+                fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
+                data: [ 23,35,24,46,37,27.2,37.6],
+                backgroundColor:'rgba(89, 121, 235, 0.35)',
+                borderColor: 'rgba(255, 143, 13, 1)',
+                borderWidth: 1,
+                pointStyle:'circle',
+                pointBackgroundColor:'rgba(255, 255, 255, 1)'
+            }
+        ]
+    },
+    options: {
+        plugins: {
+            legend: { display: false },
+        },
+        scales: {
+            x: { 
+               grid: { drawBorder: false, lineWidth: 0 }
+            },
+            y: { 
+                suggestedMin: 0,
+                suggestedMax: 10,
+                //ticks : { display: false },
+                beginAtZero: true,
+                grid:{
+                    //drawBorder: false,
+                    //lineWidth: 0,
+                    color:'rgba(188, 188, 188, 0.5)',
+                    borderDash: [3, 3]           
+                }
+            }
+        }
+    }
+});
+
+
+var context02 = document.getElementById('myChart02').getContext('2d');
+var myChart02 = new Chart(context02, {
+    type: 'line', // 차트의 형태
+    data: { // 차트에 들어갈 데이터
+        labels: ["일", "월", "화", "수", "목", "금", "토" ],
+        datasets: [
+            { //데이터
+                label: '', //차트 제목
+                fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
+                data: [ 15,30,20,25,19,43,38],
+                backgroundColor:'rgba(89, 121, 235, 0.35)',
+                borderColor: 'rgba(89, 121, 235, 1)',
+                borderWidth: 1,
+                pointStyle:'circle',
+                pointBackgroundColor:'rgba(255, 255, 255, 1)'
+            }
+        ]
+    },
+    options: {
+        plugins: {
+            legend: { display: false },
+        },
+        scales: {
+            x: { 
+                grid: { drawBorder: false, lineWidth: 0,}
+            },
+            y: { 
+                suggestedMin: 0,
+                suggestedMax: 10,
+                //ticks : { display: false },
+                beginAtZero: true,
+                grid:{
+                    //drawBorder: false,
+                    //lineWidth: 0,
+                    color:'rgba(188, 188, 188, 0.5)',
+                    borderDash: [3, 3]           
+                }
+            }
+        }
+    }
+});
+
+</script>
+<!-- //page script 끝 -->	
+</form>
+</body>
+</html>
+

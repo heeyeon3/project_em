@@ -1,0 +1,1600 @@
+{
+    "skeleton": {
+        "hash": "LWwG3cJXhhVDPNY4TRKdYWNH5RY",
+        "spine": "3.8.99",
+        "x": -248,
+        "y": -403.5,
+        "width": 1098.94,
+        "height": 1202,
+        "images": "./Img/",
+        "audio": "C:/Users/user/Desktop/work/animation/Ingame/Start_re/Img"
+    },
+    "bones": [
+        {
+            "name": "root"
+        },
+        {
+            "name": "Body",
+            "parent": "root",
+            "y": 700
+        },
+        {
+            "name": "LightEffect",
+            "parent": "Body",
+            "y": -1.45
+        },
+        {
+            "name": "LightEffect2",
+            "parent": "Body",
+            "x": -129.44,
+            "y": -0.97
+        },
+        {
+            "name": "LightEffect3",
+            "parent": "Body",
+            "x": 130.41,
+            "y": -1.93
+        },
+        {
+            "name": "StartBtn",
+            "parent": "root",
+            "y": -200
+        },
+        {
+            "name": "StartBtn2",
+            "parent": "StartBtn",
+            "x": -1.15,
+            "y": 59.31
+        },
+        {
+            "name": "UIHand",
+            "parent": "root",
+            "x": 690.64,
+            "y": 340.2,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "name": "UIHand2",
+            "parent": "UIHand",
+            "length": 370.41,
+            "rotation": 150.87,
+            "x": 155.1,
+            "y": -80.3
+        },
+        {
+            "name": "UIClickEffect",
+            "parent": "UIHand",
+            "x": -187.31,
+            "y": 102.62
+        }
+    ],
+    "slots": [
+        {
+            "name": "TrafficLight",
+            "bone": "Body",
+            "color": "ffffff00",
+            "attachment": "TrafficLight"
+        },
+        {
+            "name": "Light1",
+            "bone": "Body",
+            "color": "ffffff00",
+            "attachment": "GreenLight"
+        },
+        {
+            "name": "Light2",
+            "bone": "Body",
+            "color": "ffffff00",
+            "attachment": "GreenLight"
+        },
+        {
+            "name": "Light3",
+            "bone": "Body",
+            "color": "ffffff00",
+            "attachment": "GreenLight"
+        },
+        {
+            "name": "LightEffect",
+            "bone": "LightEffect",
+            "color": "ffffff00",
+            "attachment": "LightEffect"
+        },
+        {
+            "name": "LightEffect2",
+            "bone": "LightEffect2",
+            "color": "ffffff00",
+            "attachment": "LightEffect"
+        },
+        {
+            "name": "LightEffect3",
+            "bone": "LightEffect3",
+            "color": "ffffff00",
+            "attachment": "LightEffect"
+        },
+        {
+            "name": "StartBtnBox_2",
+            "bone": "StartBtn",
+            "color": "ffffff00",
+            "attachment": "StartBtnBox_2"
+        },
+        {
+            "name": "StartBtn",
+            "bone": "StartBtn2",
+            "color": "ffffff00",
+            "attachment": "StartBtn"
+        },
+        {
+            "name": "StartBtnBox_1",
+            "bone": "StartBtn",
+            "color": "ffffff00",
+            "attachment": "StartBtnBox_1"
+        },
+        {
+            "name": "UIClickEffect",
+            "bone": "UIClickEffect",
+            "color": "ffffff00",
+            "attachment": "UIClickEffect"
+        },
+        {
+            "name": "UIHand",
+            "bone": "UIHand2",
+            "color": "ffffff00",
+            "attachment": "UIHand"
+        }
+    ],
+    "skins": [
+        {
+            "name": "default",
+            "attachments": {
+                "Light1": {
+                    "GreenLight": {
+                        "x": -129.5,
+                        "y": -1,
+                        "width": 125,
+                        "height": 125
+                    },
+                    "RedLight": {
+                        "x": -129.5,
+                        "y": -1,
+                        "width": 125,
+                        "height": 125
+                    }
+                },
+                "Light2": {
+                    "GreenLight": {
+                        "x": 0.5,
+                        "y": -1,
+                        "width": 125,
+                        "height": 125
+                    },
+                    "YellowLight": {
+                        "x": 0.5,
+                        "y": -1,
+                        "width": 125,
+                        "height": 125
+                    }
+                },
+                "Light3": {
+                    "GreenLight": {
+                        "x": 130.5,
+                        "y": -1,
+                        "width": 125,
+                        "height": 125
+                    },
+                    "RedLight": {
+                        "x": 130.5,
+                        "y": -1,
+                        "width": 125,
+                        "height": 125
+                    }
+                },
+                "LightEffect": {
+                    "LightEffect": {
+                        "x": 0.5,
+                        "y": 0.5,
+                        "width": 149,
+                        "height": 149
+                    }
+                },
+                "LightEffect2": {
+                    "LightEffect": {
+                        "x": 0.5,
+                        "y": 0.5,
+                        "width": 149,
+                        "height": 149
+                    }
+                },
+                "LightEffect3": {
+                    "LightEffect": {
+                        "x": 0.5,
+                        "y": 0.5,
+                        "width": 149,
+                        "height": 149
+                    }
+                },
+                "StartBtn": {
+                    "StartBtn": {
+                        "x": 1.65,
+                        "y": -15.81,
+                        "width": 413,
+                        "height": 320
+                    },
+                    "StartBtn2": {
+                        "x": 1.65,
+                        "y": -15.81,
+                        "width": 413,
+                        "height": 320
+                    }
+                },
+                "StartBtnBox_1": {
+                    "StartBtnBox_1": {
+                        "y": -45.5,
+                        "width": 496,
+                        "height": 316
+                    }
+                },
+                "StartBtnBox_2": {
+                    "StartBtnBox_2": {
+                        "y": -11.5,
+                        "width": 496,
+                        "height": 384
+                    }
+                },
+                "TrafficLight": {
+                    "TrafficLight": {
+                        "type": "mesh",
+                        "uvs": [
+                            0.97135,
+                            0.07109,
+                            0.97187,
+                            0.81763,
+                            0.95518,
+                            0.87927,
+                            0.93747,
+                            0.94031,
+                            0.8962,
+                            0.95528,
+                            0.10895,
+                            0.94982,
+                            0.06952,
+                            0.93825,
+                            0.04718,
+                            0.88022,
+                            0.02539,
+                            0.8236,
+                            0.02799,
+                            0.08561,
+                            0.09328,
+                            0,
+                            0.89984,
+                            0,
+                            0.10114,
+                            0.13207,
+                            0.05258,
+                            0.22024,
+                            0.8962,
+                            0.13207,
+                            0.95689,
+                            0.23787
+                        ],
+                        "triangles": [
+                            11,
+                            12,
+                            10,
+                            14,
+                            11,
+                            0,
+                            14,
+                            12,
+                            11,
+                            9,
+                            10,
+                            12,
+                            13,
+                            9,
+                            12,
+                            15,
+                            14,
+                            0,
+                            15,
+                            0,
+                            1,
+                            8,
+                            9,
+                            13,
+                            15,
+                            1,
+                            2,
+                            14,
+                            15,
+                            4,
+                            7,
+                            8,
+                            13,
+                            13,
+                            5,
+                            7,
+                            5,
+                            6,
+                            7,
+                            15,
+                            2,
+                            4,
+                            5,
+                            12,
+                            14,
+                            4,
+                            5,
+                            14,
+                            12,
+                            5,
+                            13,
+                            2,
+                            3,
+                            4
+                        ],
+                        "vertices": [
+                            224.83,
+                            84.5,
+                            225.08,
+                            -62.57,
+                            217.12,
+                            -74.72,
+                            208.67,
+                            -86.74,
+                            188.99,
+                            -89.69,
+                            -186.53,
+                            -88.61,
+                            -205.34,
+                            -86.33,
+                            -215.99,
+                            -74.9,
+                            -226.39,
+                            -63.75,
+                            -225.15,
+                            81.63,
+                            -194.01,
+                            98.5,
+                            190.72,
+                            98.5,
+                            -190.26,
+                            72.48,
+                            -213.42,
+                            55.11,
+                            188.99,
+                            72.48,
+                            217.94,
+                            51.64
+                        ],
+                        "hull": 12,
+                        "edges": [
+                            20,
+                            18,
+                            18,
+                            16,
+                            20,
+                            22,
+                            0,
+                            22,
+                            24,
+                            26,
+                            24,
+                            28,
+                            12,
+                            14,
+                            14,
+                            16,
+                            26,
+                            14,
+                            0,
+                            2,
+                            28,
+                            30,
+                            2,
+                            4,
+                            4,
+                            6,
+                            30,
+                            4,
+                            6,
+                            8,
+                            28,
+                            8,
+                            12,
+                            10,
+                            10,
+                            8,
+                            24,
+                            10
+                        ],
+                        "width": 477,
+                        "height": 197
+                    }
+                },
+                "UIClickEffect": {
+                    "UIClickEffect": {
+                        "width": 177,
+                        "height": 177
+                    }
+                },
+                "UIHand": {
+                    "UIHand": {
+                        "x": 174.14,
+                        "y": 5.13,
+                        "rotation": -150.87,
+                        "width": 457,
+                        "height": 298
+                    }
+                }
+            }
+        }
+    ],
+    "animations": {
+        "Count_01": {
+            "slots": {
+                "Light1": {
+                    "color": [
+                        {
+                            "color": "ffffff00"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        }
+                    ],
+                    "attachment": [
+                        {
+                            "name": "RedLight"
+                        }
+                    ]
+                },
+                "Light2": {
+                    "attachment": [
+                        {
+                            "name": "YellowLight"
+                        }
+                    ]
+                },
+                "Light3": {
+                    "attachment": [
+                        {
+                            "name": "RedLight"
+                        }
+                    ]
+                },
+                "LightEffect": {
+                    "color": [
+                        {
+                            "color": "ff717100"
+                        }
+                    ]
+                },
+                "LightEffect2": {
+                    "color": [
+                        {
+                            "color": "ff717100"
+                        },
+                        {
+                            "time": 0.1667,
+                            "color": "ff7272ff"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ff717100"
+                        }
+                    ]
+                },
+                "LightEffect3": {
+                    "color": [
+                        {
+                            "color": "ff717100"
+                        }
+                    ]
+                },
+                "TrafficLight": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "LightEffect2": {
+                    "scale": [
+                        {
+                            "x": 2.025,
+                            "y": 2.025
+                        },
+                        {
+                            "time": 0.1667,
+                            "x": 0.8,
+                            "y": 0.8
+                        },
+                        {
+                            "time": 0.3333,
+                            "x": 1.5,
+                            "y": 1.5
+                        }
+                    ]
+                },
+                "LightEffect": {
+                    "scale": [
+                        {
+                            "x": 2.025,
+                            "y": 2.025
+                        }
+                    ]
+                },
+                "LightEffect3": {
+                    "scale": [
+                        {
+                            "x": 2.025,
+                            "y": 2.025
+                        }
+                    ]
+                },
+                "Body": {
+                    "rotate": [
+                        {
+                            "curve": 0.25,
+                            "c3": 0.619
+                        },
+                        {
+                            "time": 0.5,
+                            "angle": 2.87,
+                            "curve": 0.25,
+                            "c3": 0.619
+                        },
+                        {
+                            "time": 1
+                        }
+                    ],
+                    "translate": [
+                        {
+                            "y": -520,
+                            "curve": 0.395,
+                            "c3": 0.474
+                        },
+                        {
+                            "time": 0.5,
+                            "y": -545.2,
+                            "curve": 0.395,
+                            "c3": 0.474
+                        },
+                        {
+                            "time": 1,
+                            "y": -520
+                        }
+                    ]
+                }
+            },
+            "deform": {
+                "default": {
+                    "TrafficLight": {
+                        "TrafficLight": [
+                            {
+                                "curve": 0.25,
+                                "c3": 0.75
+                            },
+                            {
+                                "time": 0.5,
+                                "offset": 1,
+                                "vertices": [
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    2.29205,
+                                    0,
+                                    2.29205,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    3.32724,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    3.32724,
+                                    0,
+                                    7.22076
+                                ],
+                                "curve": 0.25,
+                                "c3": 0.75
+                            },
+                            {
+                                "time": 1,
+                                "offset": 1,
+                                "vertices": [
+                                    -3.61499,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    -3.61499,
+                                    0,
+                                    -14.45999,
+                                    0,
+                                    -14.45999,
+                                    0,
+                                    -2.16901,
+                                    0,
+                                    -3.61499,
+                                    0,
+                                    -2.16901,
+                                    0,
+                                    -3.61499
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "Count_02": {
+            "slots": {
+                "Light1": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ],
+                    "attachment": [
+                        {
+                            "name": "RedLight"
+                        }
+                    ]
+                },
+                "Light2": {
+                    "color": [
+                        {
+                            "color": "ffffff00"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        }
+                    ],
+                    "attachment": [
+                        {
+                            "name": "YellowLight"
+                        }
+                    ]
+                },
+                "Light3": {
+                    "attachment": [
+                        {
+                            "name": "RedLight"
+                        }
+                    ]
+                },
+                "LightEffect": {
+                    "color": [
+                        {
+                            "color": "fff27100"
+                        },
+                        {
+                            "time": 0.1667,
+                            "color": "fff271ff"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "fff27100"
+                        }
+                    ]
+                },
+                "LightEffect2": {
+                    "color": [
+                        {
+                            "time": 1,
+                            "color": "ff717100"
+                        }
+                    ]
+                },
+                "TrafficLight": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "Body": {
+                    "rotate": [
+                        {
+                            "curve": 0.25,
+                            "c3": 0.619
+                        },
+                        {
+                            "time": 0.5,
+                            "angle": -3.22,
+                            "curve": 0.25,
+                            "c3": 0.619
+                        },
+                        {
+                            "time": 1
+                        }
+                    ],
+                    "translate": [
+                        {
+                            "y": -520,
+                            "curve": 0.395,
+                            "c3": 0.474
+                        },
+                        {
+                            "time": 0.5,
+                            "y": -545.2,
+                            "curve": 0.395,
+                            "c3": 0.474
+                        },
+                        {
+                            "time": 1,
+                            "y": -520
+                        }
+                    ]
+                },
+                "LightEffect": {
+                    "scale": [
+                        {
+                            "x": 2.025,
+                            "y": 2.025
+                        },
+                        {
+                            "time": 0.1667,
+                            "x": 0.8,
+                            "y": 0.8
+                        },
+                        {
+                            "time": 0.3333,
+                            "x": 1.5,
+                            "y": 1.5
+                        }
+                    ]
+                }
+            },
+            "deform": {
+                "default": {
+                    "TrafficLight": {
+                        "TrafficLight": [
+                            {
+                                "offset": 1,
+                                "vertices": [
+                                    -3.61499,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    2.89203,
+                                    0,
+                                    -3.61499,
+                                    0,
+                                    -14.45999,
+                                    0,
+                                    -14.45999,
+                                    0,
+                                    -2.16901,
+                                    0,
+                                    -3.61499,
+                                    0,
+                                    -2.16901,
+                                    0,
+                                    -3.61499
+                                ]
+                            },
+                            {
+                                "time": 0.5,
+                                "vertices": [
+                                    -5.77488,
+                                    -6.0E-5,
+                                    -5.77488,
+                                    -6.0E-5,
+                                    -1.40309,
+                                    -8.0E-5,
+                                    -5.77488,
+                                    -6.0E-5,
+                                    -5.77488,
+                                    -6.0E-5,
+                                    -2.56208,
+                                    -3.2E-4,
+                                    -6.33402,
+                                    -1.8E-4,
+                                    3.17216,
+                                    -3.7E-4,
+                                    1.00652,
+                                    -2.1E-4,
+                                    1.00652,
+                                    -2.1E-4,
+                                    -12.83067,
+                                    -0.36624,
+                                    -12.27153,
+                                    -0.36612,
+                                    -2.56208,
+                                    -3.2E-4,
+                                    3.17216,
+                                    -3.7E-4,
+                                    -5.77488,
+                                    -6.0E-5,
+                                    -1.40309
+                                ],
+                                "curve": 0.25,
+                                "c3": 0.75
+                            },
+                            {
+                                "time": 1
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "Count_03": {
+            "slots": {
+                "Light1": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ],
+                    "attachment": [
+                        {
+                            "name": "RedLight"
+                        },
+                        {
+                            "time": 1,
+                            "name": "GreenLight"
+                        }
+                    ]
+                },
+                "Light2": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ],
+                    "attachment": [
+                        {
+                            "name": "YellowLight"
+                        },
+                        {
+                            "time": 1,
+                            "name": "GreenLight"
+                        }
+                    ]
+                },
+                "Light3": {
+                    "color": [
+                        {
+                            "color": "ffffff00"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "LightEffect": {
+                    "color": [
+                        {
+                            "color": "ff717100"
+                        }
+                    ]
+                },
+                "LightEffect2": {
+                    "color": [
+                        {
+                            "time": 1,
+                            "color": "ff717100"
+                        }
+                    ]
+                },
+                "LightEffect3": {
+                    "color": [
+                        {
+                            "color": "87ff7100"
+                        },
+                        {
+                            "time": 0.1667,
+                            "color": "87ff71ff"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "87ff7100"
+                        }
+                    ]
+                },
+                "TrafficLight": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "LightEffect2": {
+                    "scale": [
+                        {
+                            "x": 1.5,
+                            "y": 1.5
+                        },
+                        {
+                            "time": 1
+                        }
+                    ]
+                },
+                "LightEffect": {
+                    "scale": [
+                        {
+                            "x": 1.5,
+                            "y": 1.5
+                        },
+                        {
+                            "time": 1
+                        }
+                    ]
+                },
+                "LightEffect3": {
+                    "scale": [
+                        {
+                            "x": 2.025,
+                            "y": 2.025
+                        },
+                        {
+                            "time": 0.1667,
+                            "x": 0.8,
+                            "y": 0.8
+                        },
+                        {
+                            "time": 0.3333,
+                            "x": 1.5,
+                            "y": 1.5
+                        },
+                        {
+                            "time": 1
+                        }
+                    ]
+                },
+                "Body": {
+                    "rotate": [
+                        {
+                            "curve": 0.25,
+                            "c3": 0.619
+                        },
+                        {
+                            "time": 0.5,
+                            "angle": 4.86,
+                            "curve": 0.25,
+                            "c3": 0.619
+                        },
+                        {
+                            "time": 1
+                        }
+                    ],
+                    "translate": [
+                        {
+                            "y": -520,
+                            "curve": 0.395,
+                            "c3": 0.474
+                        },
+                        {
+                            "time": 0.5,
+                            "x": -0.67,
+                            "y": -537.36,
+                            "curve": 0.395,
+                            "c3": 0.474
+                        },
+                        {
+                            "time": 1,
+                            "x": 3.17,
+                            "y": -502.29
+                        }
+                    ]
+                }
+            },
+            "deform": {
+                "default": {
+                    "TrafficLight": {
+                        "TrafficLight": [
+                            {
+                                "curve": 0.25,
+                                "c3": 0.75
+                            },
+                            {
+                                "time": 0.5,
+                                "offset": 1,
+                                "vertices": [
+                                    -5.94681,
+                                    2.0E-5,
+                                    -5.94681,
+                                    1.0E-5,
+                                    -2.2836,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    2.0E-5,
+                                    -7.32642,
+                                    2.0E-5,
+                                    -7.32642,
+                                    3.0E-5,
+                                    -18.25491,
+                                    3.0E-5,
+                                    -18.25491,
+                                    0,
+                                    0,
+                                    1.0E-5,
+                                    -0.72034,
+                                    0,
+                                    0,
+                                    1.0E-5,
+                                    -2.2836
+                                ]
+                            },
+                            {
+                                "time": 1,
+                                "offset": 1,
+                                "vertices": [
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    2.29205,
+                                    0,
+                                    2.29205,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    3.32724,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    3.32724,
+                                    0,
+                                    7.22076
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "Count_04": {
+            "slots": {
+                "Light1": {
+                    "color": [
+                        {
+                            "color": "ffffffff",
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        },
+                        {
+                            "time": 0.6667,
+                            "color": "ffffff00"
+                        }
+                    ]
+                },
+                "Light2": {
+                    "color": [
+                        {
+                            "color": "ffffffff",
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        },
+                        {
+                            "time": 0.6667,
+                            "color": "ffffff00"
+                        }
+                    ]
+                },
+                "Light3": {
+                    "color": [
+                        {
+                            "color": "ffffffff",
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        },
+                        {
+                            "time": 0.6667,
+                            "color": "ffffff00"
+                        }
+                    ]
+                },
+                "LightEffect": {
+                    "color": [
+                        {
+                            "color": "ffffff00"
+                        },
+                        {
+                            "time": 0.1667,
+                            "color": "8eff66ff"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ffffff00"
+                        }
+                    ]
+                },
+                "LightEffect2": {
+                    "color": [
+                        {
+                            "color": "ffffff00"
+                        },
+                        {
+                            "time": 0.1667,
+                            "color": "8eff66ff"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ffffff00"
+                        }
+                    ]
+                },
+                "LightEffect3": {
+                    "color": [
+                        {
+                            "color": "ffffff00"
+                        },
+                        {
+                            "time": 0.1667,
+                            "color": "8eff66ff"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ffffff00"
+                        }
+                    ]
+                },
+                "TrafficLight": {
+                    "color": [
+                        {
+                            "color": "ffffffff",
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        },
+                        {
+                            "time": 0.6667,
+                            "color": "ffffff00"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "Body": {
+                    "translate": [
+                        {
+                            "x": 3.17,
+                            "y": -502.29,
+                            "curve": 0.225,
+                            "c3": 0.6,
+                            "c4": 0.4
+                        },
+                        {
+                            "time": 0.6667,
+                            "x": 3.17,
+                            "y": -380.39
+                        }
+                    ],
+                    "scale": [
+                        {},
+                        {
+                            "time": 0.6667,
+                            "x": 3,
+                            "y": 3
+                        }
+                    ]
+                },
+                "LightEffect": {
+                    "scale": [
+                        {},
+                        {
+                            "time": 0.3333,
+                            "x": 1.5,
+                            "y": 1.5
+                        }
+                    ]
+                },
+                "LightEffect2": {
+                    "scale": [
+                        {},
+                        {
+                            "time": 0.3333,
+                            "x": 1.5,
+                            "y": 1.5
+                        }
+                    ]
+                },
+                "LightEffect3": {
+                    "scale": [
+                        {},
+                        {
+                            "time": 0.3333,
+                            "x": 1.5,
+                            "y": 1.5
+                        }
+                    ]
+                }
+            },
+            "deform": {
+                "default": {
+                    "TrafficLight": {
+                        "TrafficLight": [
+                            {
+                                "offset": 1,
+                                "vertices": [
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    2.29205,
+                                    0,
+                                    2.29205,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    3.32724,
+                                    0,
+                                    7.22076,
+                                    0,
+                                    3.32724,
+                                    0,
+                                    7.22076
+                                ],
+                                "curve": 0.25,
+                                "c3": 0.75
+                            },
+                            {
+                                "time": 0.6667,
+                                "offset": 1,
+                                "vertices": [
+                                    -5.94681,
+                                    2.0E-5,
+                                    -5.94681,
+                                    1.0E-5,
+                                    -2.2836,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    2.0E-5,
+                                    -7.32642,
+                                    2.0E-5,
+                                    -7.32642,
+                                    3.0E-5,
+                                    -18.25491,
+                                    3.0E-5,
+                                    -18.25491,
+                                    0,
+                                    0,
+                                    1.0E-5,
+                                    -0.72034,
+                                    0,
+                                    0,
+                                    1.0E-5,
+                                    -2.2836
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "Count_05": {
+            "slots": {
+                "TrafficLight": {
+                    "color": [
+                        {
+                            "time": 0.3333,
+                            "color": "ffffff00"
+                        }
+                    ]
+                }
+            }
+        },
+        "NoImg": {
+            "slots": {
+                "TrafficLight": {
+                    "color": [
+                        {
+                            "time": 0.3333,
+                            "color": "ffffff00"
+                        }
+                    ]
+                }
+            }
+        },
+        "Ready": {
+            "slots": {
+                "StartBtn": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "StartBtnBox_1": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "StartBtnBox_2": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "UIClickEffect": {
+                    "color": [
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        },
+                        {
+                            "time": 0.6667,
+                            "color": "ffffff00"
+                        }
+                    ]
+                },
+                "UIHand": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "StartBtn2": {
+                    "translate": [
+                        {
+                            "time": 0.2
+                        },
+                        {
+                            "time": 0.3667,
+                            "y": -19.93,
+                            "curve": 0.25,
+                            "c4": 0.71
+                        },
+                        {
+                            "time": 0.6667
+                        }
+                    ]
+                },
+                "UIHand2": {
+                    "rotate": [
+                        {
+                            "angle": -18.78
+                        },
+                        {
+                            "time": 0.3333
+                        },
+                        {
+                            "time": 0.6667,
+                            "angle": -18.78
+                        }
+                    ]
+                },
+                "UIHand": {
+                    "translate": [
+                        {
+                            "x": -488.54,
+                            "y": -502.81
+                        }
+                    ]
+                },
+                "UIClickEffect": {
+                    "scale": [
+                        {
+                            "time": 0.3333,
+                            "x": 0.421,
+                            "y": 0.421
+                        },
+                        {
+                            "time": 0.6667,
+                            "x": 1.5,
+                            "y": 1.5
+                        }
+                    ]
+                }
+            }
+        },
+        "Ready2": {
+            "slots": {
+                "StartBtn": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ],
+                    "attachment": [
+                        {
+                            "name": "StartBtn2"
+                        }
+                    ]
+                },
+                "StartBtnBox_1": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "StartBtnBox_2": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                },
+                "UIClickEffect": {
+                    "color": [
+                        {
+                            "time": 0.3333,
+                            "color": "ffffffff"
+                        },
+                        {
+                            "time": 0.6667,
+                            "color": "ffffff00"
+                        }
+                    ]
+                },
+                "UIHand": {
+                    "color": [
+                        {
+                            "color": "ffffffff"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "StartBtn2": {
+                    "translate": [
+                        {
+                            "time": 0.2
+                        },
+                        {
+                            "time": 0.3667,
+                            "y": -19.93,
+                            "curve": 0.25,
+                            "c4": 0.71
+                        },
+                        {
+                            "time": 0.6667
+                        }
+                    ]
+                },
+                "UIHand2": {
+                    "rotate": [
+                        {
+                            "angle": -18.78
+                        },
+                        {
+                            "time": 0.3333
+                        },
+                        {
+                            "time": 0.6667,
+                            "angle": -18.78
+                        }
+                    ]
+                },
+                "UIHand": {
+                    "translate": [
+                        {
+                            "x": -488.54,
+                            "y": -502.81
+                        }
+                    ]
+                },
+                "UIClickEffect": {
+                    "scale": [
+                        {
+                            "time": 0.3333,
+                            "x": 0.421,
+                            "y": 0.421
+                        },
+                        {
+                            "time": 0.6667,
+                            "x": 1.5,
+                            "y": 1.5
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

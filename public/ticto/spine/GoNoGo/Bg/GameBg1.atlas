@@ -1,0 +1,55 @@
+
+GameBg1.png
+size: 1924,1319
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BgWater
+  rotate: false
+  xy: 693, 210
+  size: 480, 270
+  orig: 480, 270
+  offset: 0, 0
+  index: -1
+BgWater1
+  rotate: false
+  xy: 2, 817
+  size: 1920, 500
+  orig: 1920, 500
+  offset: 0, 0
+  index: -1
+BgWater2
+  rotate: false
+  xy: 2, 482
+  size: 1920, 333
+  orig: 1920, 333
+  offset: 0, 0
+  index: -1
+Bubble
+  rotate: false
+  xy: 693, 145
+  size: 63, 63
+  orig: 63, 63
+  offset: 0, 0
+  index: -1
+Plant11
+  rotate: false
+  xy: 2, 39
+  size: 375, 441
+  orig: 375, 441
+  offset: 0, 0
+  index: -1
+Plant21
+  rotate: false
+  xy: 379, 2
+  size: 312, 478
+  orig: 312, 478
+  offset: 0, 0
+  index: -1
+SeaRock
+  rotate: false
+  xy: 1175, 232
+  size: 321, 248
+  orig: 321, 248
+  offset: 0, 0
+  index: -1

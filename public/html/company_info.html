@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>회사소개 - eMotiV</title>
+<!-- 공통 링크 시작 -->
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/contents.css">
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/jquery.scrollbar.js"></script>
+<script type="text/javascript" src="./js/pbCommon.js"></script>
+<!-- //공통 링크 끝 -->
+
+<!-- 카카오맵 API -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=900db29e649e2f52f8554109085a2383"></script>
+<style>
+	.wrap {position: absolute;left: 0;bottom: 40px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+    .wrap * {padding: 0;margin: 0;}
+    .wrap .info {width: 286px;height: 180px;border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
+    .wrap .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #888;}
+    .info .title {padding: 5px 0 0 10px;height: 30px; border-bottom: 1px solid #ddd;font-size: 18px;font-weight: bold;}
+    .info .close {position: absolute;top: 10px;right: 10px;color: #888;width: 13px;height: 13px; background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png'); background-size: 13px; }
+    .info .close:hover {cursor: pointer;}
+    .info .body {position: relative;overflow: hidden;}
+    .info .desc {position: relative;margin: 10px;height: 75px;}
+    .desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+    .desc .jibun {font-size: 11px;color: #888;margin-top: -2px;}
+    .info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #ddd;color: #888;overflow: hidden;}
+    .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+    .info .link {color: #5085BB;}
+	.btn_direction {display: block; width: 74px; height: 34px; padding: 7px 0 10px 22px; font-weight: 500; font-size: 13px; line-height: 17px; background-position: 0 -138px; color: #fff; text-align: left; background: #3496FF; float: right;}
+</style>
+</head>
+<body>
+<form method="post" action="" id="form1">
+<!-- wrap 시작 -->
+<div id="wrap">
+    <!-- header 시작 -->
+    <div id="header">
+		<!-- include 해야할 영역 시작 -->
+        <div class="header_inner mob_menu">
+            <div class="header_tit">
+                <h1>회사소개</h1>
+                <a href="/login" class="btn_login">로그인</a>				
+                <div class="profile_sel">
+                    <button type="button" class="btn_profile_sel" id="btnProfileSel"><img src="./images/user_set.png" alt="" class=""><span class="hide">프로필선택</span></button>
+                    <ul class="profile_menu">
+                        <li class="user_login"><a><strong style="color: #5079f3;"></strong> 님</a></li>
+						<li><button type="button" id="btnProfile1">프로필1</button></li>
+						<li><button type="button" id="btnProfile2">프로필2</button></li>
+						<li><a href="/profile_modify">프로필 관리</a></li>
+						<li><a href="#" onclick="alert('서비스 준비중입니다.')">구독관리</a></li>
+						<li><a href="/mypage_phone">회원정보 수정</a></li>
+						<li><button type="button" id="btnLogout" onclick="logout()">로그아웃</button></li>
+					</ul>
+                </div>
+                <button type="button" class="btn_menu_open">메뉴 열기</button>				
+            </div>
+            <nav class="menu_wrap">				
+                <div class="lnb_tit">
+                    <strong class="menu_logo">전체메뉴</strong>
+                    <button type="button" class="btn_menu_close">메뉴 닫기</button>
+                </div>
+                <div class="user_info">
+                    <div class="user_logout"><span>로그인을 해주세요.</span><a href="/login" class="btn_login">로그인</a></div>
+                    <div class="user_login"><strong>hhhtnwls</strong>님 안녕하세요.</div>
+                </div>
+                <div class="sel_language">
+					<button type="button" class="on">한국어</button>
+					<button type="button" class="off">English</button>
+				</div>
+                <ul class="nav_menu">
+                    <li class="home"><a href="/">홈</a></li>
+					<li><a href="/company_info" class="active">회사소개</a></li>
+					<li class="sub_on"><a href="#none" id="menuhead">서비스</a>
+						<ul class="nav_menu_sub" id="menulist">
+							<li><a href="/service_star">스타러커스</a></li>
+							<li><a href="/service_adhd">스타러커스 for ADHD</a></li>
+							<li><a href="/service_land">스타러커스 째깍섬 탈출</a></li>
+							<li><a href="/digitalchart_info">디지털 차트</a></li>
+						</ul>				
+					</li>
+					<li><a href="/faq">고객지원</a></li>
+					<li><a class="btn_nav_menu" onclick="buyselalret()">구독하기</a></li>
+                </ul>
+                <div class="menu_logout"><button type="button" id="btnLogoutMenu">로그아웃</button></div>					
+            </nav>
+        </div>
+        <!-- //include 해야할 영역 끝 -->
+	</div>
+    <!-- header 끝 -->
+    
+    <!-- container 시작 -->
+    <div id="container" style="padding-top: 90px;">
+		<!-- content 시작 -->
+        <div id="content">
+
+            <div class="info_conts">
+				<h2>We are eMotiv</h2>
+				<p class="info_top_text01">디지털 융합 기술로 새로운 경험을 제공합니다.</p>
+				<div class="info_top_img"><img src="./images/img_info.png" alt=""></div>
+				<p class="info_top_text02">무한한 가능성은 특별한 사람의 가능성이<br>아닌, <strong>모두의 가능성입니다.</strong></p>	
+				<p class="info_top_text03">이모티브는 인지구조를 모델링한 모바일 게임을 기반으로 우리 아이에 대한 손쉬운 상태 진단(스크리닝), 부담 없는 치료, 지속적인 모니터링을 위한 디지털 치료제를 연구, 개발하는 전문 기업입니다.</p>				
+				<p class="info_top_text04">그동안<br><strong>어른의 눈높이</strong>로<br>아이를 바라보지<br>않으셨나요?</p>
+				<div class="info_top_text05">
+					<span class="hide">2Hours, 10Minutes</span>
+					<p>인지발달 측정과 ADHD,치매 등 다양한 정신 질환의 캐주얼한 진단을 10분 내외의 몰입감 있는 근거 기반의 게임을 통해 제공합니다.</p>
+				</div>				
+			</div>
+
+			<div class="info_wrap_bg">
+				<section class="info_conts">
+					<h3>우리의 기술</h3>
+					<p class="info_text">몰입감있는 프로그램은 짧은 시간 사용하더라도 사용자의 인지상태를 확인할 수 있습니다.<br>이모티브의 프로그램에는 아래와 같은 기술들이 숨어있습니다.</p>
+					<ul class="info_list">
+						<li class="img01">
+							<strong class="tit">인지모델링</strong>
+							<p class="txt">사용자의 인지상태를 닮은 아바타가<br>사용자 대신 Task를 수행</p>
+						</li>
+						<li class="img02">
+							<strong class="tit">게이미피케이션</strong>
+							<p class="txt">모바일 게임으로 구현하여 사용자의<br>자발적 참여와 몰입감을 극대화</span></p>
+						</li>
+						<li class="img03">
+							<strong class="tit">사용자 친화적 UI / UX</strong>
+							<p class="txt">사용자의 인지상태에 대한 분석 결과를<br>이해하기 쉽게 전달</span></p>
+						</li>
+						<li class="img04">
+							<strong class="tit">데이터 분석</strong>
+							<p class="txt">사용자의 정량적 데이터를 축적하고<br>분석을 통한 알고리즘 개발</span></p>
+						</li>
+					</ul>
+				</section>
+			</div>
+
+			<section class="info_conts">
+				<h3>히스토리</h3>
+				<p class="info_text">더 나은 미래를 위해 나아가는 이모티브의 발자취입니다.</p>
+				<section class="info_history">
+					<h4>2021</h4>
+					<ul class="history_list">
+						<li>
+							<strong class="month">11월</strong>
+							<p class="txt">TIPS 프로그램 선정<br>소셜벤처 우수상<br>사용자 인지모델 관련 특허 출원 11건</p>
+						</li>
+						<li>
+							<strong class="month">9월</strong>
+							<p class="txt">특허 출원 11건<br>뇌부자들, 부산백병원 소아정신과 전문의 파트너쉽 체결</p>
+						</li>
+						<li>
+							<strong class="month">8월</strong>
+							<p class="txt">일반 아동 인지상태 평가 프로그램 과제 계약(째깍악어 &amp; 교보생명)<br>임팩트업(홍합밸리 &amp; 교보생명)4기 최우수상 수상</p>
+						</li>
+						<li>
+							<strong class="month">7월</strong>
+							<p class="txt">시드 투자 유치(현대자동차, 인포뱅크, MYSC)</p>
+						</li>
+						<li>
+							<strong class="month">6월</strong>
+							<p class="txt">기보벤처캠프 우수기업 선정</p>
+						</li>
+						<li>
+							<strong class="month">4월</strong>
+							<p class="txt">강원형 뉴딜 특화 창업 아이템 공모전 우수상<br>디지털&라이프스타일 분야 창업지원 사업화 우수상</p>
+						</li>
+						<li>
+							<strong class="month">3월</strong>
+							<p class="txt">벤처기업 인증</p>
+						</li>
+					</ul>
+				</section>
+				<section class="info_history">
+					<h4>2020</h4>
+					<ul class="history_list">
+						<li>
+							<strong class="month">11월</strong>
+							<p class="txt">기업부설연구소 설립<br>현대자동차 제로원 PoC 진행</p>
+						</li>
+						<li>
+							<strong class="month">9월</strong>
+							<p class="txt">(주)이모티브 설립</p>
+						</li>							
+					</ul>
+				</section>				
+			</section>
+
+			<section class="info_conts">
+				<h3>언론 속의 이모티브</h3>
+				<div class="info_news_wrap">
+					<ul class="news_list">
+						<li>
+							<a href="#none">
+								<div class="news_img"><img src="./images/@news_sum01.png" alt="" class=""></div>
+								<div class="news_conts">
+									<span class="date">2021.09.10</span>
+									<strong class="tit">이모티브, ITS 2021서 아동 ADHD 위한 디지털 치료제 ‘Star Ruckus’ 소개 나선다</strong>								
+								</div>						
+							</a>					
+						</li>
+						<li>
+							<a href="#none">
+								<div class="news_img"><img src="./images/@news_sum02.png" alt="" class=""></div>
+								<div class="news_conts">
+									<span class="date">2021.09.10</span>
+									<strong class="tit">이모티브, ITS 2021서 아동 ADHD 위한 디지털 치료제 ‘Star Ruckus’ 소개 나선다 이모티브, ITS 2021서 아동 ADHD 위한 디지털 치료제 ‘Star Ruckus’ 소개 나선다</strong>								
+								</div>						
+							</a>				
+						</li>
+						<li>
+							<a href="#none">
+								<div class="news_img"><img src="./images/@news_sum03.png" alt="" class=""></div>
+								<div class="news_conts">
+									<span class="date">2021.09.10</span>
+									<strong class="tit">민정상 이모티브 대표<br>게임 치료제 개발하는 인지공학자</strong>								
+								</div>						
+							</a>				
+						</li>
+						<li>
+							<a href="#none">
+								<div class="news_img"><img src="./images/@news_sum03.png" alt="" class=""></div>
+								<div class="news_conts">
+									<span class="date">2021.09.10</span>
+									<strong class="tit">민정상 이모티브 대표<br>게임 치료제 개발하는 인지공학자</strong>								
+								</div>						
+							</a>				
+						</li>
+					</ul>
+				</div>				
+				<a href="/company_news" class="btn_new_more" style="margin-left: 20px;" target="_blank">뉴스 더보기</a>				
+			</section>			
+
+			<section class="info_conts">
+				<h3>오시는 길</h3>
+				<div class="company_map" id="map">
+					<!-- <div class="main_map" id="map">
+					</div> -->
+					<img src="./images/@temp_list_sum01.png" alt="" class="">
+				</div>
+				<dl class="company_addr">
+					<dt>Email</dt>
+					<dd>info@emotiv.kr</dd>
+					<dt>Phone</dt>
+					<dd><a href="tel:02-508-2813">02.508.2813</a></dd>
+					<dt>Address</dt>
+					<dd>서울특별시 강남구 테헤란로92길 11,3층</dd>
+				</dl>
+			</section>
+
+        </div>
+        <!-- //content 끝 -->
+    </div>
+    <!-- //container 끝 -->
+	<!-- footer 시작-->
+	<footer id="footer">
+		<div class="footer_inner">
+			<h2>(주)이모티브</h2>
+			<div class="footer_addr">대표자 : 민정상 / 사업자등록번호 : 894-87-01889 <span class="mob_inline">주소 : 서울특별시 강남구 테헤란로 92길 11, 3층 / 전화번호 : 02-508-2813</span></div>
+			<div class="footer_menu">
+				<button type="button" id="" onclick="privacypolicy()">개인정보처리방침</button>
+				<button type="button" id="" onclick="terms()">이용약관</button>
+				<a href="/faq">FAQ</a>
+			</div>
+			<div class="footer_sns">
+				<a href="https://www.youtube.com/channel/UCJ_cbzB1VjIyUgbF6JsYK_Q" target="_blank" class="youtube">youtube</a>
+				<a href="https://blog.naver.com/emotiv_" target="_blank" class="blog">blog</a>
+				<a href="https://www.instagram.com/starrukus_official/?hl=ko" target="_blank" class="instagram">instagram</a>
+			</div>
+			<p class="footer_copy">Copyright emotive CO., LTD. ALL RIGHTS RESERVED.</p>
+		</div>		
+	</footer>
+	<!-- //footer 끝-->
+</div>
+<!-- //wrap 끝 -->
+	
+<!-- page script 시작 -->
+<script src="../javascripts/company_info.js"></script>
+<!-- //page script 끝 -->	
+</form>
+</body>
+</html>
